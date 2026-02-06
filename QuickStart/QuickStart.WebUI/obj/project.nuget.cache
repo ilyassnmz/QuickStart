@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1LTu02naaQM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebUI\\QuickStart.WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lunap\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
