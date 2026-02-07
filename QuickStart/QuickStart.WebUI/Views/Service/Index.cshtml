@@ -1,0 +1,32 @@
+﻿@model List<QuickStart.WebUI.Dtos.Services.ResultServicesDto>
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br> <br>
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Hizmet</th>
+            <th>Açıklama</th>
+            <th>Icon</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.serviceId</td>
+                <td>@item.title</td>
+                <td>@item.description</td>
+                <td>@item.iconUrl</td>
+                <td><a href="" class="btn btn-danger">Sil</a></td>
+                <td><a href="" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="" class="btn btn-info">Yeni Hizmet Girişi</a>
+</div>
