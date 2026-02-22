@@ -3,7 +3,7 @@ using QuickStart.WebApi.Entity;
 
 namespace QuickStart.WebApi.Context
 {
-    public class QuickStartContext:DbContext
+    public class QuickStartContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

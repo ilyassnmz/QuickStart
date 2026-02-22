@@ -1,118 +1,12 @@
 [
   {
-    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controller.ServiceController",
     "Method": "ServiceList",
     "RelativePath": "api/Service",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
-    "Method": "CreateService",
-    "RelativePath": "api/Service",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "service",
-        "Type": "QuickStart.WebApi.Entity.Service",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
-    "Method": "UpdateService",
-    "RelativePath": "api/Service",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "service",
-        "Type": "QuickStart.WebApi.Entity.Service",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
-    "Method": "DeleteService",
-    "RelativePath": "api/Service",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
-    "Method": "TestimonialList",
-    "RelativePath": "api/Testimonial",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
-    "Method": "CreateTestimonial",
-    "RelativePath": "api/Testimonial",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "testimonial",
-        "Type": "QuickStart.WebApi.Entity.Testimonial",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
-    "Method": "UpdateTestimonial",
-    "RelativePath": "api/Testimonial",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "testimonial",
-        "Type": "QuickStart.WebApi.Entity.Testimonial",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
-    "Method": "DeleteTestimonial",
-    "RelativePath": "api/Testimonial",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
     "ReturnTypes": []
   }
 ]
