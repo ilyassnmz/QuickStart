@@ -1,8 +1,82 @@
 [
   {
-    "ContainingType": "QuickStart.WebApi.Controller.ServiceController",
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
     "Method": "ServiceList",
     "RelativePath": "api/Service",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "CreateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "QuickStart.WebApi.Entity.Service",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "UpdateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "QuickStart.WebApi.Entity.Service",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "GetById",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "ServiceCount",
+    "RelativePath": "api/Service/ServiceCount",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

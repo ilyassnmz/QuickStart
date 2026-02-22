@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\controller\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\controller\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1150,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "QuickStart.WebApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "QuickStart.WebApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-22T12:24:15.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "QuickStart.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Program.cs",
-              "RelativeToolTip": "QuickStart.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:05:44.373Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
@@ -61,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Program.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T12:05:44.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Controller\\ServiceController.cs",
               "RelativeDocumentMoniker": "QuickStart.WebApi\\Controller\\ServiceController.cs",
               "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Controller\\ServiceController.cs",
               "RelativeToolTip": "QuickStart.WebApi\\Controller\\ServiceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T12:05:06.922Z",
               "EditorCaption": ""
