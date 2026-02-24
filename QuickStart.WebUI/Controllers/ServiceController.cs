@@ -68,13 +68,13 @@ namespace QuickStart.WebUI.Controllers
 
         }
 
-        /*[HttpPost]
+        [HttpPost]
 
-        public async Task<IActionResult> UpdateService(UpdateServiceDto model)
+        public async Task<IActionResult> UpdateService(UpdateServicesDto model)
         {
             var client = _httpClientFactory.CreateClient();
 
-            var jsonData = JsonConvert.SerializeObject(model); //text->json
+            var jsonData = JsonConvert.SerializeObject(model); 
 
             var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
@@ -87,7 +87,7 @@ namespace QuickStart.WebUI.Controllers
             return View(model);
 
         }
-
+        /*
         public async Task<IActionResult> DeleteService(int id)
         {
             var client = _httpClientFactory.CreateClient();
