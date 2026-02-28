@@ -87,7 +87,7 @@ namespace QuickStart.WebUI.Controllers
             return View(model);
 
         }
-        /*
+        
         public async Task<IActionResult> DeleteService(int id)
         {
             var client = _httpClientFactory.CreateClient();
@@ -103,7 +103,5 @@ namespace QuickStart.WebUI.Controllers
             return BadRequest();
 
         }
-        */
-
     }
 }

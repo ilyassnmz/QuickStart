@@ -43,7 +43,7 @@ namespace QuickStart.WepApi.Controllers
         {
             _context.Services.Add(service);
             _context.SaveChanges();
-            return Ok("ekleme işlemi başarı ile gerçekleşti");
+            return Ok("Ekleme işlemi başarı ile gerçekleşti");
         }
 
         [HttpPut]
