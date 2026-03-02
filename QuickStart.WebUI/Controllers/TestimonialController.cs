@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.Testionials;
+using QuickStart.WebUI.Dtos.Testimonials;
 
 namespace QuickStart.WebUI.Controllers
 {
@@ -17,7 +17,7 @@ namespace QuickStart.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
 
-            var response = await client.GetAsync("https://localhost:7051/api/Testimonial");
+            var response = await client.GetAsync("https://localhost:7121/api/Testimonial");
 
             if (response.IsSuccessStatusCode)
             {
