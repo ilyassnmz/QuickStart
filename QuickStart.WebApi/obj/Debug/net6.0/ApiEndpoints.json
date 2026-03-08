@@ -11,8 +11,18 @@
   },
   {
     "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
-    "Method": "GetNotificationListwithNotificationType",
+    "Method": "GetNotificationListwithNotificationType2",
     "RelativePath": "api/Notification/2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
+    "Method": "NotificationList",
+    "RelativePath": "api/Notification/GetNotificationListwithNotificationType",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

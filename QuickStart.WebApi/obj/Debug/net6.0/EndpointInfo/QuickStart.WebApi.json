@@ -29,6 +29,18 @@
         }
       }
     },
+    "/api/Notification/GetNotificationListwithNotificationType": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Service": {
       "get": {
         "tags": [
