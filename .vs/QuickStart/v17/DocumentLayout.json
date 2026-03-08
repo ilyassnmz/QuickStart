@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\controller\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\controller\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\shared\\components\\_defaulttestimonialscomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\shared\\components\\_defaulttestimonialscomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\migrations\\20260308084432_mig2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\migrations\\20260308084432_mig2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\viewcomponents\\_defaulttestimonialscomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\viewcomponents\\_defaulttestimonialscomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\context\\quickstartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\context\\quickstartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\entity\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\entity\\notificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webapi\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9804D1CD-0D97-4D08-A743-BCF73E9686E9}|QuickStart.WebApi\\QuickStart.WebApi.csproj|solutionrelative:quickstart.webapi\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +30,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1150,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Controller\\NotificationController.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Controller\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Controller\\NotificationController.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Controller\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T08:46:20.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialsComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialsComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialsComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialsComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-02T18:39:49.171Z",
+              "Title": "20260308084432_mig2.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Migrations\\20260308084432_mig2.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Migrations\\20260308084432_mig2.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Migrations\\20260308084432_mig2.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Migrations\\20260308084432_mig2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T08:44:33.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_DefaultTestimonialsComponentPartial.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialsComponentPartial.cs",
-              "RelativeDocumentMoniker": "QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialsComponentPartial.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialsComponentPartial.cs",
-              "RelativeToolTip": "QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialsComponentPartial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
+              "Title": "QuickStartContext.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Context\\QuickStartContext.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Context\\QuickStartContext.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Context\\QuickStartContext.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Context\\QuickStartContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T18:34:51.924Z",
+              "WhenOpened": "2026-03-08T08:38:49.156Z",
               "EditorCaption": ""
             },
             {
@@ -60,15 +81,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAABwCAAAAAAAAAAASwCUCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-02T17:29:40.826Z",
+              "DocumentIndex": 3,
+              "Title": "NotificationType.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Entity\\NotificationType.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Entity\\NotificationType.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Entity\\NotificationType.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Entity\\NotificationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T08:34:36.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Entity\\Notification.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApi\\Entity\\Notification.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebApi\\Entity\\Notification.cs",
+              "RelativeToolTip": "QuickStart.WebApi\\Entity\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T08:31:42.814Z",
               "EditorCaption": ""
             }
           ]

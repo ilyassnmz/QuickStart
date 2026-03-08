@@ -15,6 +15,7 @@ namespace QuickStart.WebApi.Context
         public DbSet<Testimonial> Testimonials { get; set; }
 
 
-
+        public DbSet<Notification> Notifications { get; set; }
+        public DbSet<NotificationType> NotificationTypes { get; set; }
     }
 }
