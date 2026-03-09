@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using QuickStart.WebApi.Context;
 using QuickStart.WebApi.Dto;
-using QuickStart.WebApi.Entity;
 
 namespace QuickStart.WebApi.Controller
 {
@@ -11,30 +10,31 @@ namespace QuickStart.WebApi.Controller
     [ApiController]
     public class NotificationController : ControllerBase
     {
-
         private readonly QuickStartContext _context;
+
         public NotificationController(QuickStartContext context)
         {
             _context = context;
         }
+
         [HttpGet]
         public IActionResult GetNotificationList()
         {
             var values = _context.Notifications.ToList();
             return Ok(values);
         }
+
         [HttpGet("2")]
         public IActionResult GetNotificationListwithNotificationType2()
         {
             var values = _context.Notifications.Include(X => X.NotificationType).ToList();
             return Ok(values);
-
         }
+
         [HttpGet("GetNotificationListwithNotificationType")]
         public IActionResult NotificationList()
         {
-            var values = _context.Notifications.Include(x => x.NotificationType).Select(x => new
-            ResultNotificationWithNotificationTypeDto
+            var values = _context.Notifications.Include(x => x.NotificationType).Select(x => new ResultNotificationWithNotificationTypeDto
             {
                 NotificationId = x.NotificationId,
                 Title = x.Title,
@@ -43,7 +43,6 @@ namespace QuickStart.WebApi.Controller
                 NotificationTypeName = x.NotificationType.Name
             });
             return Ok(values);
-
         }
     }
 }

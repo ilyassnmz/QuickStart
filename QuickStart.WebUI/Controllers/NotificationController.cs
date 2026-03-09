@@ -17,15 +17,16 @@ namespace QuickStart.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync("https://localhost:7121/api/Notification/GetNotificationListwithNotificationType");
-            if(response.IsSuccessStatusCode)
+
+            if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
                 var values = JsonConvert.DeserializeObject<List<ResultNotificationWithNotificationTypeDto>>(jsonData);
 
-                return Ok(values);
+                return View(values);
             }
 
-            return View();
+            return View(new List<ResultNotificationWithNotificationTypeDto>());
         }
     }
 }
