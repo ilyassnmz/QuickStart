@@ -370,7 +370,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
     "Method": "GetNotificationList",
     "RelativePath": "api/Notification",
     "HttpMethod": "GET",
@@ -380,19 +380,73 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
-    "Method": "GetNotificationListwithNotificationType2",
-    "RelativePath": "api/Notification/2",
-    "HttpMethod": "GET",
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
+    "Method": "CreateNotification",
+    "RelativePath": "api/Notification",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "createNotificationDto",
+        "Type": "QuickStart.WebApi.Dto.NotificationDto.CreateNotificationDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
-    "Method": "NotificationList",
-    "RelativePath": "api/Notification/GetNotificationListwithNotificationType",
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
+    "Method": "UpdateNotification",
+    "RelativePath": "api/Notification",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateNotificationDto",
+        "Type": "QuickStart.WebApi.Dto.NotificationDto.UpdateNotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
+    "Method": "GetNotificationById",
+    "RelativePath": "api/Notification/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
+    "Method": "DeleteNotification",
+    "RelativePath": "api/Notification/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationController",
+    "Method": "GetNotificationListWithNotificationType",
+    "RelativePath": "api/Notification/GetNotificationListWithNotificationType",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -418,8 +472,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "notificationType",
-        "Type": "QuickStart.WebApi.Entity.NotificationType",
+        "Name": "createDto",
+        "Type": "QuickStart.WebApi.Dto.CreateNotificationTypeDto",
         "IsRequired": true
       }
     ],
@@ -434,8 +488,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "notificationType",
-        "Type": "QuickStart.WebApi.Entity.NotificationType",
+        "Name": "updateDto",
+        "Type": "QuickStart.WebApi.Dto.UpdateNotificationTypeDto",
         "IsRequired": true
       }
     ],
@@ -474,7 +528,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
     "Method": "ServiceList",
     "RelativePath": "api/Service",
     "HttpMethod": "GET",
@@ -484,7 +538,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
     "Method": "CreateService",
     "RelativePath": "api/Service",
     "HttpMethod": "POST",
@@ -492,15 +546,15 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "service",
-        "Type": "QuickStart.WebApi.Entity.Service",
+        "Name": "createDto",
+        "Type": "QuickStart.WebApi.Dto.CreateServiceDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
     "Method": "UpdateService",
     "RelativePath": "api/Service",
     "HttpMethod": "PUT",
@@ -508,31 +562,15 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "service",
-        "Type": "QuickStart.WebApi.Entity.Service",
+        "Name": "updateDto",
+        "Type": "QuickStart.WebApi.Dto.UpdateServiceDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
-    "Method": "DeleteService",
-    "RelativePath": "api/Service",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
     "Method": "GetById",
     "RelativePath": "api/Service/{id}",
     "HttpMethod": "GET",
@@ -548,7 +586,23 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ServiceController",
     "Method": "ServiceCount",
     "RelativePath": "api/Service/ServiceCount",
     "HttpMethod": "GET",
@@ -576,8 +630,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "slider",
-        "Type": "QuickStart.WebApi.Entity.Slider",
+        "Name": "createDto",
+        "Type": "QuickStart.WebApi.Dto.CreateSliderDto",
         "IsRequired": true
       }
     ],
@@ -592,8 +646,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "slider",
-        "Type": "QuickStart.WebApi.Entity.Slider",
+        "Name": "updateDto",
+        "Type": "QuickStart.WebApi.Dto.UpdateSliderDto",
         "IsRequired": true
       }
     ],
@@ -632,7 +686,33 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "GetActiveSliders",
+    "RelativePath": "api/Slider/ActiveSliders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "ToggleSliderStatus",
+    "RelativePath": "api/Slider/ToggleStatus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
     "Method": "TestimonialList",
     "RelativePath": "api/Testimonial",
     "HttpMethod": "GET",
@@ -642,7 +722,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
     "Method": "CreateTestimonial",
     "RelativePath": "api/Testimonial",
     "HttpMethod": "POST",
@@ -650,15 +730,15 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "testimonial",
-        "Type": "QuickStart.WebApi.Entity.Testimonial",
+        "Name": "createDto",
+        "Type": "QuickStart.WebApi.Dto.CreateTestimonialDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
     "Method": "UpdateTestimonial",
     "RelativePath": "api/Testimonial",
     "HttpMethod": "PUT",
@@ -666,17 +746,33 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "testimonial",
-        "Type": "QuickStart.WebApi.Entity.Testimonial",
+        "Name": "updateDto",
+        "Type": "QuickStart.WebApi.Dto.UpdateTestimonialDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
+    "Method": "GetById",
+    "RelativePath": "api/Testimonial/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
     "Method": "DeleteTestimonial",
-    "RelativePath": "api/Testimonial",
+    "RelativePath": "api/Testimonial/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -684,13 +780,13 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "ContainingType": "QuickStart.WebApi.Controllers.TestimonialController",
     "Method": "TestimonialCount",
     "RelativePath": "api/Testimonial/TestimonialCount",
     "HttpMethod": "GET",

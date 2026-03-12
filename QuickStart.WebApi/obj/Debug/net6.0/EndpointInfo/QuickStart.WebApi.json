@@ -585,12 +585,102 @@
             "description": "Success"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNotificationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNotificationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNotificationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNotificationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNotificationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNotificationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
       }
     },
-    "/api/Notification/2": {
+    "/api/Notification/{id}": {
       "get": {
         "tags": [
           "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -599,7 +689,7 @@
         }
       }
     },
-    "/api/Notification/GetNotificationListwithNotificationType": {
+    "/api/Notification/GetNotificationListWithNotificationType": {
       "get": {
         "tags": [
           "Notification"
@@ -630,17 +720,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/CreateNotificationTypeDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/CreateNotificationTypeDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/CreateNotificationTypeDto"
               }
             }
           }
@@ -659,17 +749,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/UpdateNotificationTypeDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/UpdateNotificationTypeDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/NotificationType"
+                "$ref": "#/components/schemas/UpdateNotificationTypeDto"
               }
             }
           }
@@ -744,17 +834,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/CreateServiceDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/CreateServiceDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/CreateServiceDto"
               }
             }
           }
@@ -773,41 +863,21 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/UpdateServiceDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/UpdateServiceDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Service"
+                "$ref": "#/components/schemas/UpdateServiceDto"
               }
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Service"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -848,6 +918,27 @@
             "description": "Success"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Service"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
       }
     },
     "/api/Slider": {
@@ -869,17 +960,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/CreateSliderDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/CreateSliderDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/CreateSliderDto"
               }
             }
           }
@@ -898,17 +989,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/UpdateSliderDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/UpdateSliderDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Slider"
+                "$ref": "#/components/schemas/UpdateSliderDto"
               }
             }
           }
@@ -964,6 +1055,41 @@
         }
       }
     },
+    "/api/Slider/ActiveSliders": {
+      "get": {
+        "tags": [
+          "Slider"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Slider/ToggleStatus/{id}": {
+      "put": {
+        "tags": [
+          "Slider"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Testimonial": {
       "get": {
         "tags": [
@@ -983,17 +1109,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/CreateTestimonialDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/CreateTestimonialDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/CreateTestimonialDto"
               }
             }
           }
@@ -1012,21 +1138,56 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/UpdateTestimonialDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/UpdateTestimonialDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Testimonial"
+                "$ref": "#/components/schemas/UpdateTestimonialDto"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Testimonial/TestimonialCount": {
+      "get": {
+        "tags": [
+          "Testimonial"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Testimonial/{id}": {
+      "get": {
+        "tags": [
+          "Testimonial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -1040,24 +1201,13 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/Testimonial/TestimonialCount": {
-      "get": {
-        "tags": [
-          "Testimonial"
         ],
         "responses": {
           "200": {
@@ -1121,6 +1271,102 @@
           "mapLocation": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateNotificationDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRead": {
+            "type": "boolean"
+          },
+          "notificationTypeId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateNotificationTypeDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateServiceDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "icon": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSliderDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestimonialDto": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "rate": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1208,7 +1454,7 @@
         },
         "additionalProperties": false
       },
-      "Notification": {
+      "UpdateNotificationDto": {
         "type": "object",
         "properties": {
           "notificationId": {
@@ -1229,14 +1475,11 @@
           "notificationTypeId": {
             "type": "integer",
             "format": "int32"
-          },
-          "notificationType": {
-            "$ref": "#/components/schemas/NotificationType"
           }
         },
         "additionalProperties": false
       },
-      "NotificationType": {
+      "UpdateNotificationTypeDto": {
         "type": "object",
         "properties": {
           "notificationTypeId": {
@@ -1246,18 +1489,11 @@
           "name": {
             "type": "string",
             "nullable": true
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Notification"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Service": {
+      "UpdateServiceDto": {
         "type": "object",
         "properties": {
           "serviceId": {
@@ -1272,14 +1508,14 @@
             "type": "string",
             "nullable": true
           },
-          "iconUrl": {
+          "icon": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Slider": {
+      "UpdateSliderDto": {
         "type": "object",
         "properties": {
           "sliderId": {
@@ -1304,7 +1540,7 @@
         },
         "additionalProperties": false
       },
-      "Testimonial": {
+      "UpdateTestimonialDto": {
         "type": "object",
         "properties": {
           "testimonialId": {
@@ -1323,13 +1559,13 @@
             "type": "string",
             "nullable": true
           },
-          "rate": {
-            "type": "integer",
-            "format": "int32"
-          },
           "imageUrl": {
             "type": "string",
             "nullable": true
+          },
+          "rate": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

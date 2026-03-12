@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using QuickStart.WebApi.Context;
+using QuickStart.WebApi.Dto;
 using QuickStart.WebApi.Entity;
 
 namespace QuickStart.WebApi.Controllers
@@ -20,28 +20,56 @@ namespace QuickStart.WebApi.Controllers
         [HttpGet]
         public IActionResult NotificationTypeList()
         {
-            var values = _context.NotificationTypes.ToList();
+            var values = _context.NotificationTypes
+                .Select(x => new ResultNotificationTypeDto
+                {
+                    NotificationTypeId = x.NotificationTypeId,
+                    Name = x.Name
+                })
+                .ToList();
             return Ok(values);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var value = _context.NotificationTypes.Find(id);
+            var value = _context.NotificationTypes
+                .Where(x => x.NotificationTypeId == id)
+                .Select(x => new ResultNotificationTypeDto
+                {
+                    NotificationTypeId = x.NotificationTypeId,
+                    Name = x.Name
+                })
+                .FirstOrDefault();
+
+            if (value == null)
+                return NotFound("Bildirim tipi bulunamadı");
+
             return Ok(value);
         }
 
         [HttpPost]
-        public IActionResult CreateNotificationType(NotificationType notificationType)
+        public IActionResult CreateNotificationType(CreateNotificationTypeDto createDto)
         {
+            var notificationType = new NotificationType
+            {
+                Name = createDto.Name
+            };
+
             _context.NotificationTypes.Add(notificationType);
             _context.SaveChanges();
             return Ok("Ekleme işlemi başarılı");
         }
 
         [HttpPut]
-        public IActionResult UpdateNotificationType(NotificationType notificationType)
+        public IActionResult UpdateNotificationType(UpdateNotificationTypeDto updateDto)
         {
+            var notificationType = new NotificationType
+            {
+                NotificationTypeId = updateDto.NotificationTypeId,
+                Name = updateDto.Name
+            };
+
             _context.NotificationTypes.Update(notificationType);
             _context.SaveChanges();
             return Ok("Güncelleme işlemi başarılı");
@@ -51,6 +79,9 @@ namespace QuickStart.WebApi.Controllers
         public IActionResult DeleteNotificationType(int id)
         {
             var value = _context.NotificationTypes.Find(id);
+            if (value == null)
+                return NotFound("Bildirim tipi bulunamadı");
+
             _context.NotificationTypes.Remove(value);
             _context.SaveChanges();
             return Ok("Silme işlemi başarılı");
