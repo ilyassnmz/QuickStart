@@ -1,5 +1,375 @@
 [
   {
+    "ContainingType": "QuickStart.WebApi.Controllers.AboutController",
+    "Method": "AboutList",
+    "RelativePath": "api/About",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.AboutController",
+    "Method": "CreateAbout",
+    "RelativePath": "api/About",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "about",
+        "Type": "QuickStart.WebApi.Entity.About",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.AboutController",
+    "Method": "UpdateAbout",
+    "RelativePath": "api/About",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "about",
+        "Type": "QuickStart.WebApi.Entity.About",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.AboutController",
+    "Method": "GetById",
+    "RelativePath": "api/About/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.AboutController",
+    "Method": "DeleteAbout",
+    "RelativePath": "api/About/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ContactInfoController",
+    "Method": "ContactInfoList",
+    "RelativePath": "api/ContactInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ContactInfoController",
+    "Method": "CreateContactInfo",
+    "RelativePath": "api/ContactInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactInfo",
+        "Type": "QuickStart.WebApi.Entity.ContactInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ContactInfoController",
+    "Method": "UpdateContactInfo",
+    "RelativePath": "api/ContactInfo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactInfo",
+        "Type": "QuickStart.WebApi.Entity.ContactInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ContactInfoController",
+    "Method": "GetById",
+    "RelativePath": "api/ContactInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.ContactInfoController",
+    "Method": "DeleteContactInfo",
+    "RelativePath": "api/ContactInfo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FAQController",
+    "Method": "FAQList",
+    "RelativePath": "api/FAQ",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FAQController",
+    "Method": "CreateFAQ",
+    "RelativePath": "api/FAQ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "faq",
+        "Type": "QuickStart.WebApi.Entity.FAQ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FAQController",
+    "Method": "UpdateFAQ",
+    "RelativePath": "api/FAQ",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "faq",
+        "Type": "QuickStart.WebApi.Entity.FAQ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FAQController",
+    "Method": "GetById",
+    "RelativePath": "api/FAQ/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FAQController",
+    "Method": "DeleteFAQ",
+    "RelativePath": "api/FAQ/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FeatureController",
+    "Method": "FeatureList",
+    "RelativePath": "api/Feature",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FeatureController",
+    "Method": "CreateFeature",
+    "RelativePath": "api/Feature",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feature",
+        "Type": "QuickStart.WebApi.Entity.Feature",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FeatureController",
+    "Method": "UpdateFeature",
+    "RelativePath": "api/Feature",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feature",
+        "Type": "QuickStart.WebApi.Entity.Feature",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FeatureController",
+    "Method": "GetById",
+    "RelativePath": "api/Feature/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.FeatureController",
+    "Method": "DeleteFeature",
+    "RelativePath": "api/Feature/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.MessageController",
+    "Method": "MessageList",
+    "RelativePath": "api/Message",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.MessageController",
+    "Method": "CreateMessage",
+    "RelativePath": "api/Message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "QuickStart.WebApi.Entity.Message",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.MessageController",
+    "Method": "UpdateMessage",
+    "RelativePath": "api/Message",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "QuickStart.WebApi.Entity.Message",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.MessageController",
+    "Method": "GetById",
+    "RelativePath": "api/Message/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.MessageController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/Message/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuickStart.WebApi.Controller.NotificationController",
     "Method": "GetNotificationList",
     "RelativePath": "api/Notification",
@@ -27,6 +397,80 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationTypeController",
+    "Method": "NotificationTypeList",
+    "RelativePath": "api/NotificationType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationTypeController",
+    "Method": "CreateNotificationType",
+    "RelativePath": "api/NotificationType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationType",
+        "Type": "QuickStart.WebApi.Entity.NotificationType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationTypeController",
+    "Method": "UpdateNotificationType",
+    "RelativePath": "api/NotificationType",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationType",
+        "Type": "QuickStart.WebApi.Entity.NotificationType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationTypeController",
+    "Method": "GetById",
+    "RelativePath": "api/NotificationType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.NotificationTypeController",
+    "Method": "DeleteNotificationType",
+    "RelativePath": "api/NotificationType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -111,6 +555,80 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "SliderList",
+    "RelativePath": "api/Slider",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "CreateSlider",
+    "RelativePath": "api/Slider",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slider",
+        "Type": "QuickStart.WebApi.Entity.Slider",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "UpdateSlider",
+    "RelativePath": "api/Slider",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slider",
+        "Type": "QuickStart.WebApi.Entity.Slider",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "GetById",
+    "RelativePath": "api/Slider/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApi.Controllers.SliderController",
+    "Method": "DeleteSlider",
+    "RelativePath": "api/Slider/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
