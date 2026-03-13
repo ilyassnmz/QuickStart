@@ -1,0 +1,42 @@
+﻿@model List<QuickStart.WebUI.Dtos.ContactInfos.ResultContactInfoDto>
+@{
+    ViewData["Title"] = "Ä°letiÅŸim Bilgileri";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Ä°letiÅŸim Bilgileri YÃ¶netimi</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Adres</th>
+                            <th>Telefon</th>
+                            <th>E-Posta</th>
+                            <th>Sil</th>
+                            <th>GÃ¼ncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ContactInfoId</td>
+                                <td>@item.Address</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Email</td>
+                                <td><a href="/ContactInfo/Delete/@item.ContactInfoId" class="btn btn-danger">Sil</a></td>
+                                <td><a href="/ContactInfo/Edit/@item.ContactInfoId" class="btn btn-success">GÃ¼ncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/ContactInfo/Create" class="btn btn-primary">Yeni Bilgi Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

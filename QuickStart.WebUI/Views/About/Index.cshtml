@@ -1,0 +1,40 @@
+﻿@model List<QuickStart.WebUI.Dtos.Abouts.ResultAboutDto>
+@{
+    ViewData["Title"] = "HakkÄ±mÄ±zda";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">HakkÄ±mÄ±zda (About) YÃ¶netimi</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>BaÅŸlÄ±k</th>
+                            <th>AÃ§Ä±klama</th>
+                            <th>Sil</th>
+                            <th>GÃ¼ncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.AboutId</td>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+                                <td><a href="/About/Delete/@item.AboutId" class="btn btn-danger">Sil</a></td>
+                                <td><a href="/About/Edit/@item.AboutId" class="btn btn-success">GÃ¼ncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/About/Create" class="btn btn-primary">Yeni Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

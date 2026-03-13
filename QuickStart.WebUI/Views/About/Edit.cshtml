@@ -1,0 +1,38 @@
+﻿@model QuickStart.WebUI.Dtos.Abouts.UpdateAboutDto
+@{
+    ViewData["Title"] = "HakkÄ±mÄ±zda GÃ¼ncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">HakkÄ±mÄ±zda Bilgisi GÃ¼ncelle</h4>
+            <form class="forms-sample" method="post">
+                <input type="hidden" asp-for="AboutId" />
+                <div class="form-group">
+                    <label>BaÅŸlÄ±k</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label>AÃ§Ä±klama</label>
+                    <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Resim 1 URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl1">
+                </div>
+                <div class="form-group">
+                    <label>Resim 2 URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl2">
+                </div>
+                <div class="form-group">
+                    <label>Resim 3 URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl3">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
+                <a href="/About/Index" class="btn btn-light">Ä°ptal</a>
+            </form>
+        </div>
+    </div>
+</div>

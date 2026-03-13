@@ -1,0 +1,21 @@
+﻿@model QuickStart.WebUI.Dtos.NotificationTypes.CreateNotificationTypeDto
+@{
+    ViewData["Title"] = "Yeni Bildirim TÃ¼rÃ¼";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Bildirim TÃ¼rÃ¼ Ekle</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label>TÃ¼r AdÄ±</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <a href="/NotificationType/Index" class="btn btn-light">Ä°ptal</a>
+            </form>
+        </div>
+    </div>
+</div>

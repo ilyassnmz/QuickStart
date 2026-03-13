@@ -1,0 +1,38 @@
+﻿@model List<QuickStart.WebUI.Dtos.NotificationTypes.ResultNotificationTypeDto>
+@{
+    ViewData["Title"] = "Bildirim TÃ¼rleri";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Bildirim TÃ¼rÃ¼ YÃ¶netimi</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>TÃ¼r AdÄ±</th>
+                            <th>Sil</th>
+                            <th>GÃ¼ncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.NotificationTypeId</td>
+                                <td>@item.Name</td>
+                                <td><a href="/NotificationType/Delete/@item.NotificationTypeId" class="btn btn-danger">Sil</a></td>
+                                <td><a href="/NotificationType/Edit/@item.NotificationTypeId" class="btn btn-success">GÃ¼ncelle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/NotificationType/Create" class="btn btn-primary">Yeni TÃ¼r Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

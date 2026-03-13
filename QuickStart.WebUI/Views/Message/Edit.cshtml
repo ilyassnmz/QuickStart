@@ -1,0 +1,46 @@
+﻿@model QuickStart.WebUI.Dtos.Messages.UpdateMessageDto
+@{
+    ViewData["Title"] = "Mesaj Detay / GÃ¼ncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesaj Bilgilerini GÃ¶ster / GÃ¼ncelle</h4>
+            <form class="forms-sample" method="post">
+                <input type="hidden" asp-for="MessageId" />
+                <div class="form-group">
+                    <label>GÃ¶nderen AdÄ±</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                </div>
+                <div class="form-group">
+                    <label>E-Posta</label>
+                    <input type="email" class="form-control" asp-for="Email">
+                </div>
+                <div class="form-group">
+                    <label>Konu</label>
+                    <input type="text" class="form-control" asp-for="Subject">
+                </div>
+                <div class="form-group">
+                    <label>Mesaj Ä°Ã§eriÄŸi</label>
+                    <textarea class="form-control" asp-for="Content" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>GÃ¶nderim Tarihi</label>
+                    <input type="datetime-local" class="form-control" asp-for="SendDate" value="@Model?.SendDate.ToString("yyyy-MM-ddTHH:mm")">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" asp-for="IsRead">
+                            Okundu mu?
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
+                <a href="/Message/Index" class="btn btn-light">Geri DÃ¶n</a>
+            </form>
+        </div>
+    </div>
+</div>

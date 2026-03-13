@@ -1,0 +1,38 @@
+﻿@model QuickStart.WebUI.Dtos.Notifications.UpdateNotificationDto
+@{
+    ViewData["Title"] = "Bildirim GÃ¼ncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Bildirim GÃ¼ncelle</h4>
+            <form class="forms-sample" method="post">
+                <input type="hidden" asp-for="NotificationId" />
+                <div class="form-group">
+                    <label>BaÅŸlÄ±k</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label>Ä°Ã§erik</label>
+                    <textarea class="form-control" asp-for="Content" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>TÃ¼r ID (#)</label>
+                    <input type="number" class="form-control" asp-for="NotificationTypeId">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" asp-for="IsRead">
+                            Okundu olarak iÅŸaretle?
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
+                <a href="/Notification/Index" class="btn btn-light">Ä°ptal</a>
+            </form>
+        </div>
+    </div>
+</div>

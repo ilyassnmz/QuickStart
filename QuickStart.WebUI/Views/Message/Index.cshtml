@@ -1,0 +1,46 @@
+﻿@model List<QuickStart.WebUI.Dtos.Messages.ResultMessageDto>
+@{
+    ViewData["Title"] = "Mesajlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Gelen Mesajlar</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>GÃ¶nderen</th>
+                            <th>E-Posta</th>
+                            <th>Konu</th>
+                            <th>Tarih</th>
+                            <th>Durum</th>
+                            <th>MesajÄ± Oku/GÃ¼ncelle</th>
+                            <th>Sil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.MessageId</td>
+                                <td>@item.Name</td>
+                                <td>@item.Email</td>
+                                <td>@item.Subject</td>
+                                <td>@item.SendDate.ToString("dd MMM yyyy HH:mm")</td>
+                                <td>@(item.IsRead ? "Okundu" : "OkunmadÄ±")</td>
+                                <td><a href="/Message/Edit/@item.MessageId" class="btn btn-warning">Detay/GÃ¼ncelle</a></td>
+                                <td><a href="/Message/Delete/@item.MessageId" class="btn btn-danger">Sil</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Message/Create" class="btn btn-primary">Yeni Mesaj OluÅŸtur</a>
+            </div>
+        </div>
+    </div>
+</div>

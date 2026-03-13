@@ -1,0 +1,38 @@
+﻿@model QuickStart.WebUI.Dtos.Testimonials.UpdateTestimonialDto
+@{
+    ViewData["Title"] = "MÃ¼ÅŸteri Yorumu GÃ¼ncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">MÃ¼ÅŸteri Yorumu (Testimonial) GÃ¼ncelle</h4>
+            <form class="forms-sample" method="post">
+                <input type="hidden" asp-for="TestimonialId" />
+                <div class="form-group">
+                    <label>Ad Soyad</label>
+                    <input type="text" class="form-control" asp-for="FullName">
+                </div>
+                <div class="form-group">
+                    <label>Meslek/Unvan</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label>Yorum</label>
+                    <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Puan (1-5 arasÄ±)</label>
+                    <input type="number" class="form-control" asp-for="Rate" min="1" max="5">
+                </div>
+                <div class="form-group">
+                    <label>GÃ¶rsel URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
+                <a href="/Testimonial/Index" class="btn btn-light">Ä°ptal</a>
+            </form>
+        </div>
+    </div>
+</div>
