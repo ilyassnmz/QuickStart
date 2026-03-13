@@ -70,7 +70,6 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\D
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\staticwebassets.build.json.cache
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\QuickSta.CBC09E4C.Up2Date
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\QuickStart.WebApi.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebApi\obj\Debug\net6.0\refint\QuickStart.WebApi.dll
