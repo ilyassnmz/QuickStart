@@ -1,4 +1,4 @@
-﻿@model List<QuickStart.WebUI.Dtos.Testimonials.ResultTestimonialDto>
+@model List<QuickStart.WebUI.Dtos.Testimonials.ResultTestimonialDto>
 
 @*
     Default Testimonial
@@ -42,16 +42,17 @@
                 }
             </script>
             <div class="swiper-wrapper">
+            @if(Model != null) {
                 @foreach (var item in Model)
                 {
-                    <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="testimonial-item">
                         <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            @for(int i=0; i<item.rate; i++) {
+                                <i class="bi bi-star-fill"></i>
+                            }
                         </div>
-                        <p>
-                            @item.description
-                        </p>
+                        <p>@item.description</p>
                         <div class="profile mt-auto">
                             <img src="@item.imageUrl" class="testimonial-img" alt="">
                             <h3>@item.fullName</h3>
@@ -60,8 +61,7 @@
                     </div>
                 </div><!-- End testimonial item -->
                 }
-                
-
+            }
             </div>
             <div class="swiper-pagination"></div>
         </div>
