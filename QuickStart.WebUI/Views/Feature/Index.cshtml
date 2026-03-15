@@ -1,24 +1,24 @@
 ﻿@model List<QuickStart.WebUI.Dtos.Features.ResultFeatureDto>
 @{
-    ViewData["Title"] = "Ã–ne Ã‡Ä±kanlar (Feature)";
+    ViewData["Title"] = "Öne Çıkanlar (Feature)";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Ã–ne Ã‡Ä±kanlar YÃ¶netimi</h4>
+            <h4 class="card-title">Öne Çıkanlar Yönetimi</h4>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>BaÅŸlÄ±k</th>
-                            <th>AÃ§Ä±klama</th>
-                            <th>Ä°kon</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>İkon</th>
                             <th>Durum</th>
                             <th>Sil</th>
-                            <th>GÃ¼ncelle</th>
+                            <th>Güncelle</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,7 +31,7 @@
                                 <td><i class="@item.Icon"></i> (@item.Icon)</td>
                                 <td>@(item.IsActive ? "Aktif" : "Pasif")</td>
                                 <td><a href="/Feature/Delete/@item.FeatureId" class="btn btn-danger">Sil</a></td>
-                                <td><a href="/Feature/Edit/@item.FeatureId" class="btn btn-success">GÃ¼ncelle</a></td>
+                                <td><a href="/Feature/Edit/@item.FeatureId" class="btn btn-success">Güncelle</a></td>
                             </tr>
                         }
                     </tbody>

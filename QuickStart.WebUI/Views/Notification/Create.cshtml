@@ -10,27 +10,27 @@
             <h4 class="card-title">Yeni Bildirim Ekle</h4>
             <form class="forms-sample" method="post">
                 <div class="form-group">
-                    <label>BaÅŸlÄ±k</label>
+                    <label>Başlık</label>
                     <input type="text" class="form-control" asp-for="Title">
                 </div>
                 <div class="form-group">
-                    <label>Ä°Ã§erik</label>
+                    <label>İçerik</label>
                     <textarea class="form-control" asp-for="Content" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>TÃ¼r ID (#)</label>
+                    <label>Tür ID (#)</label>
                     <input type="number" class="form-control" asp-for="NotificationTypeId">
                 </div>
                 <div class="form-group">
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" asp-for="IsRead">
-                            Okundu olarak iÅŸaretle?
+                            Okundu olarak işaretle?
                         </label>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
-                <a href="/Notification/Index" class="btn btn-light">Ä°ptal</a>
+                <a href="/Notification/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

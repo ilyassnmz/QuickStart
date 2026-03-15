@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\",
+  "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\adminlayout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart\\quickstart.webui\\views\\adminlayout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\adminlayout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart\\quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3B80909F-ABC6-48DE-9D96-2C8E6C0D1DB1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
               "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
               "RelativeToolTip": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-12T19:57:59.621Z",
               "IsPinned": true,
@@ -46,11 +46,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
               "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
               "RelativeToolTip": "QuickStart.WebUI\\Views\\AdminLayout\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-13T08:56:13.287Z",
               "EditorCaption": ""

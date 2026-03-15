@@ -1,13 +1,13 @@
 ﻿@model QuickStart.WebUI.Dtos.ContactInfos.UpdateContactInfoDto
 @{
-    ViewData["Title"] = "Ä°letiÅŸim Bilgisi GÃ¼ncelle";
+    ViewData["Title"] = "İletişim Bilgisi Güncelle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Ä°letiÅŸim Bilgisi GÃ¼ncelle</h4>
+            <h4 class="card-title">İletişim Bilgisi Güncelle</h4>
             <form class="forms-sample" method="post">
                 <input type="hidden" asp-for="ContactInfoId" />
                 <div class="form-group">
@@ -26,8 +26,8 @@
                     <label>Harita Konumu (Iframe URL)</label>
                     <textarea class="form-control" asp-for="MapLocation" rows="4"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
-                <a href="/ContactInfo/Index" class="btn btn-light">Ä°ptal</a>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a href="/ContactInfo/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

@@ -1,25 +1,47 @@
-$viewsPath = ".\Views"
-$files = Get-ChildItem -Path $viewsPath -Filter *.cshtml -Recurse
+$replacements = @{
+    "Ã§" = "ç"
+    "Ã‡" = "Ç"
+    "ÄŸ" = "ğ"
+    "Äž" = "Ğ"
+    "Ä±" = "ı"
+    "Ä°" = "İ"
+    "Ã¶" = "ö"
+    "Ã–" = "Ö"
+    "ÅŸ" = "ş"
+    "Åž" = "Ş"
+    "Ã¼" = "ü"
+    "Ãœ" = "Ü"
+    "Ä°" = "İ"
+    "â€™" = "'"
+    "AÃ§Ä±klama" = "Açıklama"
+    "YÃ¶netimi" = "Yönetimi"
+    "MÃ¼ÅŸteriler" = "Müşteriler"
+    "GÃ¶rsel" = "Görsel"
+    "Ä°Ã§erik" = "İçerik"
+    "Ä°Ã§eriÄŸi" = "İçeriği"
+    "TÃ¼r" = "Tür"
+    "BugÃ¼n" = "Bugün"
+    "Ã¶n" = "ön"
+}
 
-foreach ($f in $files) {
-    $content = [System.IO.File]::ReadAllText($f.FullName, [System.Text.Encoding]::UTF8)
+$files = Get-ChildItem -Path "c:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart\QuickStart.WebUI\Views" -Include *.cshtml -Recurse
+
+foreach ($file in $files) {
+    if ($file.FullName -match "\\obj\\" -or $file.FullName -match "\\bin\\") { continue }
     
+    $content = [System.IO.File]::ReadAllText($file.FullName, [System.Text.Encoding]::UTF8)
     $modified = $false
     
-    if ($content -match 'Ã§') { $content = $content.Replace('Ã§', 'ç'); $modified = $true }
-    if ($content -match 'Ã‡') { $content = $content.Replace('Ã‡', 'Ç'); $modified = $true }
-    if ($content -match 'ÄŸ') { $content = $content.Replace('ÄŸ', 'ğ'); $modified = $true }
-    if ($content -match 'Äž') { $content = $content.Replace('Äž', 'Ğ'); $modified = $true }
-    if ($content -match 'Ä±') { $content = $content.Replace('Ä±', 'ı'); $modified = $true }
-    if ($content -match 'Ä°') { $content = $content.Replace('Ä°', 'İ'); $modified = $true }
-    if ($content -match 'Ã¶') { $content = $content.Replace('Ã¶', 'ö'); $modified = $true }
-    if ($content -match 'Ã–') { $content = $content.Replace('Ã–', 'Ö'); $modified = $true }
-    if ($content -match 'ÅŸ') { $content = $content.Replace('ÅŸ', 'ş'); $modified = $true }
-    if ($content -match 'Åž') { $content = $content.Replace('Åž', 'Ş'); $modified = $true }
-    if ($content -match 'Ã¼') { $content = $content.Replace('Ã¼', 'ü'); $modified = $true }
-    if ($content -match 'Ãœ') { $content = $content.Replace('Ãœ', 'Ü'); $modified = $true }
-
+    foreach ($key in $replacements.Keys) {
+        if ($content.Contains($key)) {
+            $content = $content.Replace($key, $replacements[$key])
+            $modified = $true
+        }
+    }
+    
     if ($modified) {
-        [System.IO.File]::WriteAllText($f.FullName, $content, [System.Text.Encoding]::UTF8)
+        [System.IO.File]::WriteAllText($file.FullName, $content, [System.Text.Encoding]::UTF8)
+        Write-Host "Fixed: $($file.Name)"
     }
 }
+Write-Host "Done Replacement."

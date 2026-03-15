@@ -1,20 +1,20 @@
 ﻿@model QuickStart.WebUI.Dtos.Abouts.CreateAboutDto
 @{
-    ViewData["Title"] = "Yeni HakkÄ±mÄ±zda";
+    ViewData["Title"] = "Yeni Hakkımızda";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Yeni HakkÄ±mÄ±zda Bilgisi Ekle</h4>
+            <h4 class="card-title">Yeni Hakkımızda Bilgisi Ekle</h4>
             <form class="forms-sample" method="post">
                 <div class="form-group">
-                    <label>BaÅŸlÄ±k</label>
-                    <input type="text" class="form-control" asp-for="Title" placeholder="BaÅŸlÄ±k">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Başlık">
                 </div>
                 <div class="form-group">
-                    <label>AÃ§Ä±klama</label>
+                    <label>Açıklama</label>
                     <textarea class="form-control" asp-for="Description" rows="4"></textarea>
                 </div>
                 <div class="form-group">
@@ -30,7 +30,7 @@
                     <input type="text" class="form-control" asp-for="ImageUrl3" placeholder="Resim 3">
                 </div>
                 <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
-                <a href="/About/Index" class="btn btn-light">Ä°ptal</a>
+                <a href="/About/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

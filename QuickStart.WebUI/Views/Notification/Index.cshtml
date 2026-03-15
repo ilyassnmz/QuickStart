@@ -13,12 +13,12 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>BaÅŸlÄ±k</th>
-                            <th>Ä°Ã§erik</th>
+                            <th>Başlık</th>
+                            <th>İçerik</th>
                             <th>Durum</th>
-                            <th>TÃ¼r Id</th>
+                            <th>Tür Id</th>
                             <th>Sil</th>
-                            <th>GÃ¼ncelle</th>
+                            <th>Güncelle</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,10 +30,10 @@
                                     <td>@item.NotificationId</td>
                                     <td>@item.Title</td>
                                     <td>@(item.Content != null && item.Content.Length > 30 ? item.Content.Substring(0, 30) + "..." : item.Content)</td>
-                                    <td>@(item.IsRead ? "Okundu" : "OkunmadÄ±")</td>
+                                    <td>@(item.IsRead ? "Okundu" : "Okunmadı")</td>
                                     <td>@item.NotificationTypeId</td>
                                     <td><a href="/Notification/Delete/@item.NotificationId" class="btn btn-danger">Sil</a></td>
-                                    <td><a href="/Notification/Edit/@item.NotificationId" class="btn btn-success">GÃ¼ncelle</a></td>
+                                    <td><a href="/Notification/Edit/@item.NotificationId" class="btn btn-success">Güncelle</a></td>
                                 </tr>
                             }
                         }

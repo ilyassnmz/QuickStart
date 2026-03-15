@@ -1,25 +1,25 @@
 ﻿@model QuickStart.WebUI.Dtos.Features.UpdateFeatureDto
 @{
-    ViewData["Title"] = "Ã–ne Ã‡Ä±kan GÃ¼ncelle";
+    ViewData["Title"] = "Öne Çıkan Güncelle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Ã–ne Ã‡Ä±kan Bilgisi GÃ¼ncelle</h4>
+            <h4 class="card-title">Öne Çıkan Bilgisi Güncelle</h4>
             <form class="forms-sample" method="post">
                 <input type="hidden" asp-for="FeatureId" />
                 <div class="form-group">
-                    <label>BaÅŸlÄ±k</label>
+                    <label>Başlık</label>
                     <input type="text" class="form-control" asp-for="Title">
                 </div>
                 <div class="form-group">
-                    <label>AÃ§Ä±klama</label>
+                    <label>Açıklama</label>
                     <textarea class="form-control" asp-for="Description" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Ä°kon SÄ±nÄ±fÄ± (Ã–rn: bi bi-star)</label>
+                    <label>İkon Sınıfı (Örn: bi bi-star)</label>
                     <input type="text" class="form-control" asp-for="Icon">
                 </div>
                 <div class="form-group">
@@ -30,8 +30,8 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
-                <a href="/Feature/Index" class="btn btn-light">Ä°ptal</a>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a href="/Feature/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

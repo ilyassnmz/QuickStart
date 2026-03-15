@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj": {}
+    "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj": {
+    "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
         "projectName": "QuickStart.WebApi",
-        "projectPath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
+        "projectPath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
         "packagesPath": "C:\\Users\\lunap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,21 +1,21 @@
 ﻿@model QuickStart.WebUI.Dtos.NotificationTypes.UpdateNotificationTypeDto
 @{
-    ViewData["Title"] = "Bildirim TÃ¼rÃ¼ GÃ¼ncelle";
+    ViewData["Title"] = "Bildirim Türü Güncelle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Bildirim TÃ¼rÃ¼ GÃ¼ncelle</h4>
+            <h4 class="card-title">Bildirim Türü Güncelle</h4>
             <form class="forms-sample" method="post">
                 <input type="hidden" asp-for="NotificationTypeId" />
                 <div class="form-group">
-                    <label>TÃ¼r AdÄ±</label>
+                    <label>Tür Adı</label>
                     <input type="text" class="form-control" asp-for="Name">
                 </div>
-                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
-                <a href="/NotificationType/Index" class="btn btn-light">Ä°ptal</a>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a href="/NotificationType/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

@@ -1,13 +1,13 @@
 ﻿@model QuickStart.WebUI.Dtos.FAQs.UpdateFAQDto
 @{
-    ViewData["Title"] = "Soru GÃ¼ncelle";
+    ViewData["Title"] = "Soru Güncelle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">SÄ±kÃ§a Sorulan Soru GÃ¼ncelle</h4>
+            <h4 class="card-title">Sıkça Sorulan Soru Güncelle</h4>
             <form class="forms-sample" method="post">
                 <input type="hidden" asp-for="FAQId" />
                 <div class="form-group">
@@ -19,7 +19,7 @@
                     <textarea class="form-control" asp-for="Answer" rows="6"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>SÄ±ralama</label>
+                    <label>Sıralama</label>
                     <input type="number" class="form-control" asp-for="Order">
                 </div>
                 <div class="form-group">
@@ -30,8 +30,8 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mr-2">GÃ¼ncelle</button>
-                <a href="/FAQ/Index" class="btn btn-light">Ä°ptal</a>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a href="/FAQ/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

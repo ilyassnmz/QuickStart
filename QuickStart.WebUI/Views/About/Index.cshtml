@@ -1,22 +1,22 @@
 ﻿@model List<QuickStart.WebUI.Dtos.Abouts.ResultAboutDto>
 @{
-    ViewData["Title"] = "HakkÄ±mÄ±zda";
+    ViewData["Title"] = "Hakkımızda";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">HakkÄ±mÄ±zda (About) YÃ¶netimi</h4>
+            <h4 class="card-title">Hakkımızda (About) Yönetimi</h4>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>BaÅŸlÄ±k</th>
-                            <th>AÃ§Ä±klama</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
                             <th>Sil</th>
-                            <th>GÃ¼ncelle</th>
+                            <th>Güncelle</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,7 +27,7 @@
                                 <td>@item.Title</td>
                                 <td>@item.Description</td>
                                 <td><a href="/About/Delete/@item.AboutId" class="btn btn-danger">Sil</a></td>
-                                <td><a href="/About/Edit/@item.AboutId" class="btn btn-success">GÃ¼ncelle</a></td>
+                                <td><a href="/About/Edit/@item.AboutId" class="btn btn-success">Güncelle</a></td>
                             </tr>
                         }
                     </tbody>

@@ -1,13 +1,13 @@
 ﻿@model QuickStart.WebUI.Dtos.ContactInfos.CreateContactInfoDto
 @{
-    ViewData["Title"] = "Yeni Ä°letiÅŸim Bilgisi";
+    ViewData["Title"] = "Yeni İletişim Bilgisi";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Yeni Ä°letiÅŸim Bilgisi Ekle</h4>
+            <h4 class="card-title">Yeni İletişim Bilgisi Ekle</h4>
             <form class="forms-sample" method="post">
                 <div class="form-group">
                     <label>Adres</label>
@@ -26,7 +26,7 @@
                     <textarea class="form-control" asp-for="MapLocation" rows="4"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
-                <a href="/ContactInfo/Index" class="btn btn-light">Ä°ptal</a>
+                <a href="/ContactInfo/Index" class="btn btn-light">İptal</a>
             </form>
         </div>
     </div>

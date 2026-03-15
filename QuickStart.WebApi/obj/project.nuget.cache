@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rNq2yAr77yg=",
+  "dgSpecHash": "3TQyksPZJwI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebApi\\QuickStart.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lunap\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

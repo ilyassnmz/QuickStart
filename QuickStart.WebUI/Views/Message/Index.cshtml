@@ -13,12 +13,12 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>GÃ¶nderen</th>
+                            <th>Gönderen</th>
                             <th>E-Posta</th>
                             <th>Konu</th>
                             <th>Tarih</th>
                             <th>Durum</th>
-                            <th>MesajÄ± Oku/GÃ¼ncelle</th>
+                            <th>Mesajı Oku/Güncelle</th>
                             <th>Sil</th>
                         </tr>
                     </thead>
@@ -31,15 +31,15 @@
                                 <td>@item.Email</td>
                                 <td>@item.Subject</td>
                                 <td>@item.SendDate.ToString("dd MMM yyyy HH:mm")</td>
-                                <td>@(item.IsRead ? "Okundu" : "OkunmadÄ±")</td>
-                                <td><a href="/Message/Edit/@item.MessageId" class="btn btn-warning">Detay/GÃ¼ncelle</a></td>
+                                <td>@(item.IsRead ? "Okundu" : "Okunmadı")</td>
+                                <td><a href="/Message/Edit/@item.MessageId" class="btn btn-warning">Detay/Güncelle</a></td>
                                 <td><a href="/Message/Delete/@item.MessageId" class="btn btn-danger">Sil</a></td>
                             </tr>
                         }
                     </tbody>
                 </table>
                 <br />
-                <a href="/Message/Create" class="btn btn-primary">Yeni Mesaj OluÅŸtur</a>
+                <a href="/Message/Create" class="btn btn-primary">Yeni Mesaj Oluştur</a>
             </div>
         </div>
     </div>
