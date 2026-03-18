@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
+using QuickStart.WepApi.Entities;
 using QuickStart.WepApi.Entity;
 
 namespace QuickStart.WepApi.Controllers
@@ -16,33 +17,36 @@ namespace QuickStart.WepApi.Controllers
             _context = context;
         }
 
-
         [HttpGet]
-
         public IActionResult TestimonialList()
         {
-            var value=_context.Testimonials.ToList();
-            return Ok(value);
+            var values = _context.Testimonials.ToList();
+            return Ok(values);
         }
 
         [HttpGet("TestimonialCount")]
-
         public IActionResult TestimonialCount()
         {
             var value = _context.Testimonials.Count();
             return Ok(value);
         }
-        [HttpPost]
 
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var testimonial = _context.Testimonials.Find(id);
+            return Ok(testimonial);
+        }
+
+        [HttpPost]
         public IActionResult CreateTestimonial(Testimonial testimonial)
         {
             _context.Testimonials.Add(testimonial);
             _context.SaveChanges();
-            return Ok("Ekleme işlemi başarı ile gerçekleşti :)");
+            return Ok("Ekleme işlemi başarı ile gerçekleşti");
         }
 
         [HttpPut]
-
         public IActionResult UpdateTestimonial(Testimonial testimonial)
         {
             _context.Testimonials.Update(testimonial);

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using QuickStart.WepApi.Context;
-using QuickStart.WepApi.Dto;
+using QuickStart.WepApi.Entities;
+using QuickStart.WepApi.Entity;
 
 namespace QuickStart.WepApi.Controllers
 {
@@ -18,31 +18,49 @@ namespace QuickStart.WepApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetNotificationList()
-        {
-            var values=_context.Notifications.ToList();
-            return Ok(values);
-        }
-
-        [HttpGet("2")]
-        public IActionResult GetNotificationListwithNotificationType2()
-        {
-            var values = _context.Notifications.Include(X=>X.NotificationType).ToList();
-            return Ok(values);
-        }
-
-        [HttpGet("GetNotificationListwithNotificationType")]
         public IActionResult NotificationList()
         {
-            var values = _context.Notifications.Include(x => x.NotificationType).Select(x => new ResultNotificationWithNotificationTypeDto
-            {
-                NotificationId = x.NotificationId,
-                Title = x.Title,
-                Content = x.Content,
-                IsRead = x.IsRead,
-                NotificationTypeName = x.NotificationType.Name
-            });
+            var values = _context.Notifications.ToList();
             return Ok(values);
+        }
+
+        [HttpGet("NotificationCount")]
+        public IActionResult NotificationCount()
+        {
+            var value = _context.Notifications.Count();
+            return Ok(value);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var notification = _context.Notifications.Find(id);
+            return Ok(notification);
+        }
+
+        [HttpPost]
+        public IActionResult CreateNotification(Notification notification)
+        {
+            _context.Notifications.Add(notification);
+            _context.SaveChanges();
+            return Ok("Ekleme işlemi başarı ile gerçekleşti");
+        }
+
+        [HttpPut]
+        public IActionResult UpdateNotification(Notification notification)
+        {
+            _context.Notifications.Update(notification);
+            _context.SaveChanges();
+            return Ok("Güncelleme işlemi başarı ile gerçekleşti");
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteNotification(int id)
+        {
+            var value = _context.Notifications.Find(id);
+            _context.Notifications.Remove(value);
+            _context.SaveChanges();
+            return Ok("Silme işlemi başarı ile gerçekleşti");
         }
     }
 }

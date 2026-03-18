@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
+using QuickStart.WepApi.Entities;
 using QuickStart.WepApi.Entity;
 
 namespace QuickStart.WepApi.Controllers
@@ -19,31 +20,30 @@ namespace QuickStart.WepApi.Controllers
         [HttpGet]
         public IActionResult ServiceList()
         {
-            var value=_context.Services.ToList();
-            return Ok(value);
+            var values = _context.Services.ToList();
+            return Ok(values);
         }
 
         [HttpGet("ServiceCount")]
-
         public IActionResult ServiceCount()
         {
             var value = _context.Services.Count();
             return Ok(value);
         }
+
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var Service = _context.Services.Find(id);
-            return Ok(Service);
+            var service = _context.Services.Find(id);
+            return Ok(service);
         }
 
         [HttpPost]
-
         public IActionResult CreateService(Service service)
         {
             _context.Services.Add(service);
             _context.SaveChanges();
-            return Ok("ekleme işlemi başarı ile gerçekleşti");
+            return Ok("Ekleme işlemi başarı ile gerçekleşti");
         }
 
         [HttpPut]
@@ -55,14 +55,12 @@ namespace QuickStart.WepApi.Controllers
         }
 
         [HttpDelete]
-
         public IActionResult DeleteService(int id)
         {
             var value = _context.Services.Find(id);
             _context.Services.Remove(value);
             _context.SaveChanges();
             return Ok("Silme işlemi başarı ile gerçekleşti");
-
         }
     }
 }
