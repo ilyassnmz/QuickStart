@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\context\\quickstartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\context\\quickstartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuickStartContext.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Context\\QuickStartContext.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Context\\QuickStartContext.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Context\\QuickStartContext.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Context\\QuickStartContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T14:01:16.329Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
