@@ -2,7 +2,7 @@
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class _DefaultHeadComponentPartial:ViewComponent
+    public class DefaultHeadComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

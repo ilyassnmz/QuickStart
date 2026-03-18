@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
 using QuickStart.WepApi.Entities;
+using QuickStart.WepApi.DTOs.SliderDTOs;
 
 namespace QuickStart.WepApi.Controllers
 {
@@ -19,44 +19,77 @@ namespace QuickStart.WepApi.Controllers
         [HttpGet]
         public IActionResult SliderList()
         {
-            var values = _context.Sliders.ToList();
+            var values = _context.Sliders
+                .Select(x => new ResultSliderDto
+                {
+                    SliderId = x.SliderId,
+                    Title = x.Title,
+                    Description = x.Description,
+                    ImagesUrl = x.ImageUrl,
+                    IsActive = x.IsActive
+                })
+                .ToList();
             return Ok(values);
-        }
-
-        [HttpGet("SliderCount")]
-        public IActionResult SliderCount()
-        {
-            var value = _context.Sliders.Count();
-            return Ok(value);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var slider = _context.Sliders.Find(id);
-            return Ok(slider);
+            var value = _context.Sliders.Find(id);
+            if (value == null)
+                return NotFound();
+
+            var result = new ResultSliderDto
+            {
+                SliderId = value.SliderId,
+                Title = value.Title,
+                Description = value.Description,
+                ImagesUrl = value.ImageUrl,
+                IsActive = value.IsActive
+            };
+            return Ok(result);
         }
 
         [HttpPost]
-        public IActionResult CreateSlider(Slider slider)
+        public IActionResult CreateSlider(CreateSliderDto createDto)
         {
+            var slider = new Slider
+            {
+                Title = createDto.Title,
+                Description = createDto.Description,
+                ImageUrl = createDto.ImagesUrl,
+                IsActive = createDto.IsActive
+            };
+
             _context.Sliders.Add(slider);
             _context.SaveChanges();
             return Ok("Ekleme işlemi başarı ile gerçekleşti");
         }
 
         [HttpPut]
-        public IActionResult UpdateSlider(Slider slider)
+        public IActionResult UpdateSlider(UpdateSliderDto updateDto)
         {
+            var slider = new Slider
+            {
+                SliderId = updateDto.SliderId,
+                Title = updateDto.Title,
+                Description = updateDto.Description,
+                ImageUrl = updateDto.ImagesUrl,
+                IsActive = updateDto.IsActive
+            };
+
             _context.Sliders.Update(slider);
             _context.SaveChanges();
             return Ok("Güncelleme işlemi başarı ile gerçekleşti");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteSlider(int id)
         {
             var value = _context.Sliders.Find(id);
+            if (value == null)
+                return NotFound();
+
             _context.Sliders.Remove(value);
             _context.SaveChanges();
             return Ok("Silme işlemi başarı ile gerçekleşti");

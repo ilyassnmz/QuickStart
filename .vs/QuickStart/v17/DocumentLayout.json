@@ -3,116 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\testimonialdtos\\resulttestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\testimonialdtos\\resulttestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\testimonialdtos\\updatetestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\testimonialdtos\\updatetestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\shared\\components\\_defaulttestimonialcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\shared\\components\\_defaulttestimonialcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\testimonialdtos\\createtestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\testimonialdtos\\createtestimonialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\viewcomponents\\_defaulttestimonialcomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\viewcomponents\\_defaulttestimonialcomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\sliderdtos\\resultsliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\sliderdtos\\resultsliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\sliderdtos\\updatesliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\sliderdtos\\updatesliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\viewcomponents\\_defaultfootercomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\viewcomponents\\_defaultfootercomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\sliderdtos\\createsliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\sliderdtos\\createsliderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\servicedtos\\resultservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\servicedtos\\resultservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\servicedtos\\updateservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\servicedtos\\updateservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\servicedtos\\createservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\servicedtos\\createservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationtypedtos\\resultnotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationtypedtos\\resultnotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationtypedtos\\updatenotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationtypedtos\\updatenotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationtypedtos\\createnotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationtypedtos\\createnotificationtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationdtos\\updatenotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationdtos\\updatenotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationdtos\\resultnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationdtos\\resultnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\notificationdtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\notificationdtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\messagedtos\\createmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\messagedtos\\createmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\featuredtos\\resultfeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\featuredtos\\resultfeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\featuredtos\\updatefeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\featuredtos\\updatefeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\featuredtos\\createfeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\featuredtos\\createfeaturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\faqdtos\\resultfaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\faqdtos\\resultfaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\faqdtos\\updatefaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\faqdtos\\updatefaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\faqdtos\\createfaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\faqdtos\\createfaqdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\contactinfodtos\\resultcontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\contactinfodtos\\resultcontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\contactinfodtos\\updatecontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\contactinfodtos\\updatecontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\contactinfodtos\\createcontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\contactinfodtos\\createcontactinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\aboutdtos\\createaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\aboutdtos\\createaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\aboutdtos\\resultaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\aboutdtos\\resultaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.wepapi\\dto\\aboutdtos\\updateaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E64C69FA-35DF-45E7-88BA-42B2EA8F6A0F}|QuickStart.WepApi\\QuickStart.WepApi.csproj|solutionrelative:quickstart.wepapi\\dto\\aboutdtos\\updateaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart\\quickstart.webui\\views\\shared\\components\\_defaultheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4063E505-2E9B-495E-B739-6FCC61642EC1}|QuickStart.WebUI\\QuickStart.WebUI.csproj|solutionrelative:quickstart.webui\\views\\shared\\components\\_defaultheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -127,365 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResultTestimonialDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\ResultTestimonialDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\ResultTestimonialDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\ResultTestimonialDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\ResultTestimonialDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:25.49Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "QuickStart.WebUI\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAH4CAAAAAAAAAAAAwIsCAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T19:43:44.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateTestimonialDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\UpdateTestimonialDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\UpdateTestimonialDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\UpdateTestimonialDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\UpdateTestimonialDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:21.235Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultTestimonialComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T19:43:10.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateTestimonialDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\CreateTestimonialDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\CreateTestimonialDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\TestimonialDTOs\\CreateTestimonialDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\TestimonialDTOs\\CreateTestimonialDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "_DefaultTestimonialComponentPartial.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialComponentPartial.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialComponentPartial.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialComponentPartial.cs",
+              "RelativeToolTip": "QuickStart.WebUI\\ViewComponents\\_DefaultTestimonialComponentPartial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:17.129Z",
+              "WhenOpened": "2026-03-18T19:42:45.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ResultSliderDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\ResultSliderDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\SliderDTOs\\ResultSliderDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\ResultSliderDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\SliderDTOs\\ResultSliderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:10.579Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T19:41:59.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UpdateSliderDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\UpdateSliderDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\SliderDTOs\\UpdateSliderDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\UpdateSliderDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\SliderDTOs\\UpdateSliderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Title": "_DefaultFooterComponentPartial.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultFooterComponentPartial.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\ViewComponents\\_DefaultFooterComponentPartial.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\ViewComponents\\_DefaultFooterComponentPartial.cs",
+              "RelativeToolTip": "QuickStart.WebUI\\ViewComponents\\_DefaultFooterComponentPartial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:06.603Z",
+              "WhenOpened": "2026-03-18T19:40:39.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CreateSliderDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\CreateSliderDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\SliderDTOs\\CreateSliderDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\SliderDTOs\\CreateSliderDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\SliderDTOs\\CreateSliderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:46:00.354Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T19:39:56.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ResultServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\ResultServiceDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ServiceDTOs\\ResultServiceDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\ResultServiceDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ServiceDTOs\\ResultServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:54.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpdateServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\UpdateServiceDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ServiceDTOs\\UpdateServiceDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\UpdateServiceDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ServiceDTOs\\UpdateServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:50.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\CreateServiceDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ServiceDTOs\\CreateServiceDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ServiceDTOs\\CreateServiceDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ServiceDTOs\\CreateServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:44.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ResultNotificationTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\ResultNotificationTypeDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\ResultNotificationTypeDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\ResultNotificationTypeDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\ResultNotificationTypeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:36.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdateNotificationTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\UpdateNotificationTypeDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\UpdateNotificationTypeDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\UpdateNotificationTypeDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\UpdateNotificationTypeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:31.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateNotificationTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\CreateNotificationTypeDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\CreateNotificationTypeDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\CreateNotificationTypeDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationTypeDTOs\\CreateNotificationTypeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:16.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UpdateNotificationDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\UpdateNotificationDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationDTOs\\UpdateNotificationDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\UpdateNotificationDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationDTOs\\UpdateNotificationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:12.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ResultNotificationDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\ResultNotificationDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationDTOs\\ResultNotificationDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\ResultNotificationDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationDTOs\\ResultNotificationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:04.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CreateNotificationDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\CreateNotificationDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\NotificationDTOs\\CreateNotificationDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\NotificationDTOs\\CreateNotificationDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\NotificationDTOs\\CreateNotificationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:45:01.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CreateMessageDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\MessageDTOs\\CreateMessageDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\MessageDTOs\\CreateMessageDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\MessageDTOs\\CreateMessageDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\MessageDTOs\\CreateMessageDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:44:49.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ResultFeatureDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\ResultFeatureDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FeatureDTOs\\ResultFeatureDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\ResultFeatureDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FeatureDTOs\\ResultFeatureDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:44:38.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UpdateFeatureDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\UpdateFeatureDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FeatureDTOs\\UpdateFeatureDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\UpdateFeatureDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FeatureDTOs\\UpdateFeatureDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:44:39.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateFeatureDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\CreateFeatureDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FeatureDTOs\\CreateFeatureDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FeatureDTOs\\CreateFeatureDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FeatureDTOs\\CreateFeatureDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:44:32.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ResultFAQDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\ResultFAQDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FAQDTOs\\ResultFAQDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\ResultFAQDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FAQDTOs\\ResultFAQDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:43:03.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UpdateFAQDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\UpdateFAQDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FAQDTOs\\UpdateFAQDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\UpdateFAQDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FAQDTOs\\UpdateFAQDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:42:59.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CreateFAQDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\CreateFAQDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\FAQDTOs\\CreateFAQDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\FAQDTOs\\CreateFAQDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\FAQDTOs\\CreateFAQDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:42:52.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ResultContactInfoDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\ResultContactInfoDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\ResultContactInfoDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\ResultContactInfoDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\ResultContactInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:42:47.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateContactInfoDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\UpdateContactInfoDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\UpdateContactInfoDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\UpdateContactInfoDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\UpdateContactInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:42:42.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateContactInfoDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\CreateContactInfoDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\CreateContactInfoDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\ContactInfoDTOs\\CreateContactInfoDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\ContactInfoDTOs\\CreateContactInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:41:24.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UpdateAboutDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\UpdateAboutDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\AboutDTOs\\UpdateAboutDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\UpdateAboutDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\AboutDTOs\\UpdateAboutDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:40:04.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ResultAboutDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\ResultAboutDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\AboutDTOs\\ResultAboutDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\ResultAboutDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\AboutDTOs\\ResultAboutDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:39:59.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateAboutDto.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\CreateAboutDto.cs",
-              "RelativeDocumentMoniker": "QuickStart.WepApi\\Dto\\AboutDTOs\\CreateAboutDto.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WepApi\\Dto\\AboutDTOs\\CreateAboutDto.cs",
-              "RelativeToolTip": "QuickStart.WepApi\\Dto\\AboutDTOs\\CreateAboutDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:39:48.976Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart\\QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "QuickStart.WebUI\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T19:38:33.166Z",
               "EditorCaption": ""
             },
             {

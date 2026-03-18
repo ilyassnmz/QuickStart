@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
-using QuickStart.WepApi.Dto.AboutDTOs;
 using QuickStart.WepApi.Entities;
+using QuickStart.WepApi.DTOs.AboutDTOs;
 
 namespace QuickStart.WepApi.Controllers
 {
@@ -79,7 +79,7 @@ namespace QuickStart.WepApi.Controllers
             return Ok("Güncelleme işlemi başarı ile gerçekleşti");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteAbout(int id)
         {
             var value = _context.Abouts.Find(id);

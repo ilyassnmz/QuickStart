@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
 using QuickStart.WepApi.Entities;
+using QuickStart.WepApi.DTOs.FeatureDTOs;
 
 namespace QuickStart.WepApi.Controllers
 {
@@ -19,44 +19,73 @@ namespace QuickStart.WepApi.Controllers
         [HttpGet]
         public IActionResult FeatureList()
         {
-            var values = _context.Features.ToList();
+            var values = _context.Features
+                .Select(x => new ResultFeatureDto
+                {
+                    FeatureId = x.FeatureId,
+                    Title = x.Title,
+                    Description = x.Description,
+                    Icon = x.Icon
+                })
+                .ToList();
             return Ok(values);
-        }
-
-        [HttpGet("FeatureCount")]
-        public IActionResult FeatureCount()
-        {
-            var value = _context.Features.Count();
-            return Ok(value);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var feature = _context.Features.Find(id);
-            return Ok(feature);
+            var value = _context.Features.Find(id);
+            if (value == null)
+                return NotFound();
+
+            var result = new ResultFeatureDto
+            {
+                FeatureId = value.FeatureId,
+                Title = value.Title,
+                Description = value.Description,
+                Icon = value.Icon
+            };
+            return Ok(result);
         }
 
         [HttpPost]
-        public IActionResult CreateFeature(Feature feature)
+        public IActionResult CreateFeature(CreateFeatureDto createDto)
         {
+            var feature = new Feature
+            {
+                Title = createDto.Title,
+                Description = createDto.Description,
+                Icon = createDto.Icon
+            };
+
             _context.Features.Add(feature);
             _context.SaveChanges();
             return Ok("Ekleme işlemi başarı ile gerçekleşti");
         }
 
         [HttpPut]
-        public IActionResult UpdateFeature(Feature feature)
+        public IActionResult UpdateFeature(UpdateFeatureDto updateDto)
         {
+            var feature = new Feature
+            {
+                FeatureId = updateDto.FeatureId,
+                Title = updateDto.Title,
+                Description = updateDto.Description,
+                Icon = updateDto.Icon
+            };
+
             _context.Features.Update(feature);
             _context.SaveChanges();
             return Ok("Güncelleme işlemi başarı ile gerçekleşti");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteFeature(int id)
         {
             var value = _context.Features.Find(id);
+            if (value == null)
+                return NotFound();
+
             _context.Features.Remove(value);
             _context.SaveChanges();
             return Ok("Silme işlemi başarı ile gerçekleşti");

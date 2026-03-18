@@ -8,6 +8,7 @@
         public string Content { get; set; }
 
         public bool IsRead { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public int NotificationTypeId { get; set; }
 

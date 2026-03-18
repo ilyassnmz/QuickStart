@@ -1,37 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.Testionials;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class _DefaultTestimonialComponentPartial:ViewComponent
+    public class DefaultTestimonialComponentPartial : ViewComponent
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public _DefaultTestimonialComponentPartial(IHttpClientFactory httpClientFactory)
+        public DefaultTestimonialComponentPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
-        { 
-            var client=_httpClientFactory.CreateClient();
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7051/api/Testimonial");
 
-            var response = await client.GetAsync("https://localhost:7051/api/Testimonial");
-
-            if (response.IsSuccessStatusCode)
+            if (responseMessage.IsSuccessStatusCode)
             {
-                var jsonData=await response.Content.ReadAsStringAsync();
-                var values=JsonConvert.DeserializeObject<List<ResultTestimonialDto>>(jsonData);
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<List<ResultTestimonialDto>>(jsonData);
                 return View(values);
             }
-
-            return View();
+            return View(new List<ResultTestimonialDto>());
         }
     }
 }
-
-//Api verileri Json formatı
-//input veya listeleme kısmı Text
-//json-text ->Deserialize
-//text-json->Serialize
