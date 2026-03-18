@@ -1,6 +1,6 @@
 ﻿@model QuickStart.WebUI.Dtos.Services.CreateServicesDto
 @{
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
 }
 
 <div class="container">
@@ -10,11 +10,12 @@
         <input type="text" asp-for="title" class="form-control" />
         <br>
         <label> Hizmet Açıklaması</label>
-        <input type="text" asp-for="description" class="form-control" />
+        <input type="text" asp-for="description" class="form-control"/>
         <br />
         <label> İkon</label>
         <input type="text" asp-for="iconUrl" class="form-control" />
         <br />
         <button class="btn btn-primary"> Hizmeti Kaydet</button>
+
     </form>
 </div>

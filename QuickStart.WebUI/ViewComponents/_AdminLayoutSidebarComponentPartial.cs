@@ -2,7 +2,7 @@
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class _AdminLayoutSidebarComponentPartial : ViewComponent
+    public class _AdminLayoutSidebarComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

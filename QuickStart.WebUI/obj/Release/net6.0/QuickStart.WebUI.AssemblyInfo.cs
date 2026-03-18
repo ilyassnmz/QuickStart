@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickStart.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89c22e9d0a1fe91809d879e4df2edad1cee9048a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef859d0296a9d73959c51d47629cd018377f9011")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickStart.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickStart.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

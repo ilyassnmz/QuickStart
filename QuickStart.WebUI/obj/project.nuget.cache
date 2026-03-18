@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "svVYUTCuVbk=",
+  "dgSpecHash": "B70a2bGkxjU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart\\QuickStart.WebUI\\QuickStart.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart\\QuickStart.WebUI\\QuickStart.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lunap\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

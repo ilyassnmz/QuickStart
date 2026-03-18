@@ -1,140 +1,87 @@
-﻿@*
-    Admin Sidebar 
-*@
-
+﻿
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-        <a class="sidebar-brand brand-logo" href="/AdminLayout/Index">
-            <img src="/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo.svg" alt="logo" />
-        </a>
-        <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="/AdminLayout/Index">
-            <img src="/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo-mini.svg" alt="logo" />
-        </a>
+        <a class="sidebar-brand brand-logo" href="index.html"><img src="~/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="~/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo-mini.svg" alt="logo" /></a>
     </div>
-
     <ul class="nav">
-        <!-- Profil -->
         <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                    <img src="/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/faces/face1.jpg" alt="profile" />
+                    <img src="~/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/faces/face1.jpg" alt="profile" />
                     <span class="login-status online"></span>
+                    <!--change to offline or busy as needed-->
                 </div>
                 <div class="nav-profile-text d-flex flex-column pr-3">
-                    <span class="font-weight-medium mb-2">İlyas Sönmez</span>
-                    <span class="font-weight-normal">Admin Panel</span>
+                    <span class="font-weight-medium mb-2">Buse Nur Demirbaş</span>
+                    <span class="font-weight-normal">$8,753.00</span>
                 </div>
                 <span class="badge badge-danger text-white ml-3 rounded">3</span>
             </a>
         </li>
-
-        <!-- Anasayfa -->
         <li class="nav-item">
-            <a class="nav-link" href="/AdminLayout/Index">
-                <i class="mdi mdi-view-dashboard menu-icon"></i>
-                <span class="menu-title">Dashboard</span>
+            <a class="nav-link" href="index.html">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Anasyafa</span>
             </a>
         </li>
-
-        <!-- Slider -->
+       
         <li class="nav-item">
-            <a class="nav-link" href="/Slider/Index">
-                <i class="mdi mdi-image-multiple menu-icon"></i>
-                <span class="menu-title">Slider</span>
-            </a>
-        </li>
-
-        <!-- About -->
-        <li class="nav-item">
-            <a class="nav-link" href="/About/Index">
-                <i class="mdi mdi-information-outline menu-icon"></i>
+            <a class="nav-link" href="pages/icons/mdi.html">
+                <i class="mdi mdi-contacts menu-icon"></i>
                 <span class="menu-title">Hakkımızda</span>
             </a>
         </li>
-
-        <!-- Services -->
         <li class="nav-item">
-            <a class="nav-link" href="/Service/Index">
-                <i class="mdi mdi-briefcase-outline menu-icon"></i>
-                <span class="menu-title">Hizmetler</span>
+            <a class="nav-link" href="pages/forms/basic_elements.html">
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                <span class="menu-title">Hizmetlerimiz</span>
             </a>
         </li>
-
-        <!-- Feature -->
         <li class="nav-item">
-            <a class="nav-link" href="/Feature/Index">
-                <i class="mdi mdi-star-outline menu-icon"></i>
+            <a class="nav-link" href="pages/charts/chartjs.html">
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+                <span class="menu-title">Müşterilerimiz</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="pages/tables/basic-table.html">
+                <i class="mdi mdi-table-large menu-icon"></i>
                 <span class="menu-title">Özellikler</span>
             </a>
         </li>
-
-        <!-- Testimonial -->
         <li class="nav-item">
-            <a class="nav-link" href="/Testimonial/Index">
-                <i class="mdi mdi-account-multiple-outline menu-icon"></i>
-                <span class="menu-title">Müşteri Yorumları</span>
+            <span class="nav-link" href="#">
+                <i class="mdi mdi-cellphone-android menu-icon"></i>
+                <span class="menu-title">İletişim</span>
+            </span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="pages/tables/basic-table.html">
+                <i class="mdi mdi-swap-horizontal menu-icon"></i>
+                <span class="menu-title">İstatislik</span>
             </a>
         </li>
-
-        <!-- FAQ -->
         <li class="nav-item">
-            <a class="nav-link" href="/FAQ/Index">
-                <i class="mdi mdi-help-circle-outline menu-icon"></i>
-                <span class="menu-title">Sıkça Sorulanlar</span>
+            <span class="nav-link" href="#">
+                <i class="mdi mdi-facebook-messenger menu-icon"></i>
+                <span class="menu-title">Mesajlar</span>
+            </span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.bootstrapdash.com/demo/breeze-free/documentation/documentation.html">
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+                <span class="menu-title">Documentation</span>
             </a>
         </li>
-
-        <!-- Notifications -->
-        <li class="nav-item">
-            <a class="nav-link" href="/Notification/Index">
-                <i class="mdi mdi-bell-outline menu-icon"></i>
-                <span class="menu-title">Bildirimler</span>
-            </a>
-        </li>
-
-        <!-- Notification Types -->
-        <li class="nav-item">
-            <a class="nav-link" href="/NotificationType/Index">
-                <i class="mdi mdi-format-list-bulleted-type menu-icon"></i>
-                <span class="menu-title">Bildirim Türleri</span>
-            </a>
-        </li>
-
-        <!-- Contact Info -->
-        <li class="nav-item">
-            <a class="nav-link" href="/ContactInfo/Index">
-                <i class="mdi mdi-phone-outline menu-icon"></i>
-                <span class="menu-title">İletişim Bilgileri</span>
-            </a>
-        </li>
-
-        <!-- Messages -->
-        <li class="nav-item">
-            <a class="nav-link" href="/Message/Index">
-                <i class="mdi mdi-email-outline menu-icon"></i>
-                <span class="menu-title">Gelen Mesajlar</span>
-            </a>
-        </li>
-
-        <!-- Siteye Git -->
-        <li class="nav-item">
-            <a class="nav-link" href="/Default/Index">
-                <i class="mdi mdi-earth menu-icon"></i>
-                <span class="menu-title">Siteye Git</span>
-            </a>
-        </li>
-
-        <!-- Çıkış -->
         <li class="nav-item sidebar-actions">
             <div class="nav-link">
                 <div class="mt-4">
-                    <p class="text-black">Hesap</p>
+                    <div class="border-none">
+                        <p class="text-black">Bildirimler</p>
+                    </div>
                     <ul class="mt-4 pl-0">
-                        <li>
-                            <a href="/Logout" class="text-danger">
-                                <i class="mdi mdi-logout"></i> Çıkış Yap
-                            </a>
-                        </li>
+                        <li>Çıkış Yap</li>
                     </ul>
                 </div>
             </div>

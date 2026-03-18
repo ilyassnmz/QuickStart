@@ -7,6 +7,10 @@ namespace QuickStart.WebUI.Controllers
 {
     public class ServiceController : Controller
     {
+        //Api - FARKLI PROGRAMLARIN BİRBİRİYLE KONUŞMASINI SAĞLAR
+        //HTTP - İnternetteki cihazların birbiriyle konuşmasını sağlayan bir protokol
+        //HTTCLİENT - Apiye http isteklerini göndermemiz için kullanıyoruz.
+
 
         private readonly IHttpClientFactory _httpClientFactory;
 
@@ -17,11 +21,11 @@ namespace QuickStart.WebUI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7121/api/Service");
+            var client=_httpClientFactory.CreateClient();
+            var response = await client.GetAsync("https://localhost:7051/api/Service");
             if (response.IsSuccessStatusCode)
             {
-                var jsonData = await response.Content.ReadAsStringAsync();
+                var jsonData=await response.Content.ReadAsStringAsync();
                 var values = JsonConvert.DeserializeObject<List<ResultServicesDto>>(jsonData);
                 return View(values);
             }
@@ -39,11 +43,11 @@ namespace QuickStart.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
 
-            var jsonData = JsonConvert.SerializeObject(model); 
+            var jsonData=JsonConvert.SerializeObject(model); //göndereceğim veri stringten - json çevirme
 
             var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync("https://localhost:7121/api/Service", content);
+            var response = await client.PostAsync("https://localhost:7051/api/Service", content);
 
             if (response.IsSuccessStatusCode)
             {
@@ -54,15 +58,15 @@ namespace QuickStart.WebUI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> UpdateService(int id)
+        public  async Task<IActionResult> UpdateService(int id)
         {
-            var client = _httpClientFactory.CreateClient();
+            var client=_httpClientFactory.CreateClient();
 
-            var responseMessage = await client.GetAsync("https://localhost:7121/api/Service/" + id);
+            var responseMessage = await client.GetAsync("https://localhost:7051/api/Service/" + id);
 
-            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var jsonData=await responseMessage.Content.ReadAsStringAsync();
 
-            var values = JsonConvert.DeserializeObject<UpdateServicesDto>(jsonData);
+            var values = JsonConvert.DeserializeObject<UpdateServiceDto>(jsonData);
 
             return View(values);
 
@@ -70,15 +74,15 @@ namespace QuickStart.WebUI.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> UpdateService(UpdateServicesDto model)
-        {
+        public async Task<IActionResult> UpdateService(UpdateServiceDto model)
+        { 
             var client = _httpClientFactory.CreateClient();
 
-            var jsonData = JsonConvert.SerializeObject(model); 
+            var jsonData = JsonConvert.SerializeObject(model); //text->json
 
             var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-            var response = await client.PutAsync("https://localhost:7121/api/Service", content);
+            var response = await client.PutAsync("https://localhost:7051/api/Service", content);
 
             if (response.IsSuccessStatusCode)
             {
@@ -87,12 +91,12 @@ namespace QuickStart.WebUI.Controllers
             return View(model);
 
         }
-        
+
         public async Task<IActionResult> DeleteService(int id)
         {
-            var client = _httpClientFactory.CreateClient();
+            var client=_httpClientFactory.CreateClient();
 
-            var response = await client.DeleteAsync("https://localhost:7121/api/Service?id=" + id);
+            var response = await client.DeleteAsync("https://localhost:7051/api/Service?id=" + id);
 
             if (response.IsSuccessStatusCode)
             {
@@ -103,5 +107,7 @@ namespace QuickStart.WebUI.Controllers
             return BadRequest();
 
         }
+
+
     }
 }
