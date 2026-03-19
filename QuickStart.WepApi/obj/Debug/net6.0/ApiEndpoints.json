@@ -74,6 +74,154 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QuickStart.WepApi.Controllers.ChefController",
+    "Method": "ChefList",
+    "RelativePath": "api/Chef",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ChefController",
+    "Method": "CreateChef",
+    "RelativePath": "api/Chef",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "QuickStart.WepApi.DTOs.ChefDTOs.CreateChefDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ChefController",
+    "Method": "UpdateChef",
+    "RelativePath": "api/Chef",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "QuickStart.WepApi.DTOs.ChefDTOs.UpdateChefDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ChefController",
+    "Method": "GetById",
+    "RelativePath": "api/Chef/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ChefController",
+    "Method": "DeleteChef",
+    "RelativePath": "api/Chef/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ClientController",
+    "Method": "ClientList",
+    "RelativePath": "api/Client",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ClientController",
+    "Method": "CreateClient",
+    "RelativePath": "api/Client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "QuickStart.WepApi.DTOs.ClientDTOs.CreateClientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ClientController",
+    "Method": "UpdateClient",
+    "RelativePath": "api/Client",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "QuickStart.WepApi.DTOs.ClientDTOs.UpdateClientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ClientController",
+    "Method": "GetById",
+    "RelativePath": "api/Client/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.ClientController",
+    "Method": "DeleteClient",
+    "RelativePath": "api/Client/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuickStart.WepApi.Controllers.ContactInfoController",
     "Method": "ContactInfoList",
     "RelativePath": "api/ContactInfo",
@@ -296,6 +444,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QuickStart.WepApi.Controllers.GalleryController",
+    "Method": "GalleryList",
+    "RelativePath": "api/Gallery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.GalleryController",
+    "Method": "CreateGallery",
+    "RelativePath": "api/Gallery",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "QuickStart.WepApi.DTOs.GalleryDTOs.CreateGalleryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.GalleryController",
+    "Method": "UpdateGallery",
+    "RelativePath": "api/Gallery",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "QuickStart.WepApi.DTOs.GalleryDTOs.UpdateGalleryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.GalleryController",
+    "Method": "GetById",
+    "RelativePath": "api/Gallery/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.GalleryController",
+    "Method": "DeleteGallery",
+    "RelativePath": "api/Gallery/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuickStart.WepApi.Controllers.MessageController",
     "Method": "MessageList",
     "RelativePath": "api/Message",
@@ -441,6 +663,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.NotificationController",
+    "Method": "GetNotificationListwithNotificationType",
+    "RelativePath": "api/Notification/GetNotificationListwithNotificationType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -592,6 +824,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QuickStart.WepApi.Controllers.ServiceController",
+    "Method": "ServiceCount",
+    "RelativePath": "api/Service/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuickStart.WepApi.Controllers.SliderController",
     "Method": "SliderList",
     "RelativePath": "api/Slider",
@@ -653,6 +895,80 @@
     "ContainingType": "QuickStart.WepApi.Controllers.SliderController",
     "Method": "DeleteSlider",
     "RelativePath": "api/Slider/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.SubscribeController",
+    "Method": "SubscribeList",
+    "RelativePath": "api/Subscribe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.SubscribeController",
+    "Method": "CreateSubscribe",
+    "RelativePath": "api/Subscribe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "QuickStart.WepApi.DTOs.SubscribeDTOs.CreateSubscribeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.SubscribeController",
+    "Method": "UpdateSubscribe",
+    "RelativePath": "api/Subscribe",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "QuickStart.WepApi.DTOs.SubscribeDTOs.UpdateSubscribeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.SubscribeController",
+    "Method": "GetById",
+    "RelativePath": "api/Subscribe/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.SubscribeController",
+    "Method": "DeleteSubscribe",
+    "RelativePath": "api/Subscribe/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -737,6 +1053,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WepApi.Controllers.TestimonialController",
+    "Method": "TestimonialCount",
+    "RelativePath": "api/Testimonial/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

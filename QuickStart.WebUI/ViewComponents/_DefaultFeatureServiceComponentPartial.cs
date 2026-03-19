@@ -1,12 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class DefaultFeatureServiceComponentPartial : ViewComponent
+    // PDF'deki isimle birebir uyum için ayrı ViewComponent
+    public class _DefaultFeatureServiceComponentPartial : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly Services.ApiClient _apiClient;
+
+        public _DefaultFeatureServiceComponentPartial(Services.ApiClient apiClient)
         {
-            return View();
+            _apiClient = apiClient;
+        }
+
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+            var values = await _apiClient.GetAsync<List<ResultServiceDto>>("api/Service");
+            var top = (values ?? new List<ResultServiceDto>()).Take(3).ToList();
+            return View(top);
         }
     }
 }

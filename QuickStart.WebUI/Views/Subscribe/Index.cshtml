@@ -1,0 +1,30 @@
+@model List<QuickStart.WebUI.Models.ResultSubscribeDto>
+@{
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Email</th>
+            <th>Tarih</th>
+            <th>Aktif</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SubscribeId</td>
+                <td>@item.Email</td>
+                <td>@item.CreatedAt</td>
+                <td>@(item.IsActive ? "Evet" : "Hayır")</td>
+                <td><a href="/Subscribe/DeleteSubscribe/@item.SubscribeId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Subscribe/UpdateSubscribe/@item.SubscribeId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Subscribe/CreateSubscribe" class="btn btn-info">Yeni Abone</a>
+</div>

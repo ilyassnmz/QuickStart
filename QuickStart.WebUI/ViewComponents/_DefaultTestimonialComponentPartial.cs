@@ -1,30 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class DefaultTestimonialComponentPartial : ViewComponent
+    public class _DefaultTestimonialComponentPartial : ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public DefaultTestimonialComponentPartial(IHttpClientFactory httpClientFactory)
+        public _DefaultTestimonialComponentPartial(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7051/api/Testimonial");
-
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultTestimonialDto>>(jsonData);
-                return View(values);
-            }
-            return View(new List<ResultTestimonialDto>());
+            var values = await _apiClient.GetAsync<List<ResultTestimonialDto>>("api/Testimonial");
+            return View(values ?? new List<ResultTestimonialDto>());
         }
     }
 }

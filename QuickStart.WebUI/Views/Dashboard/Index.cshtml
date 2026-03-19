@@ -1,4 +1,4 @@
-﻿
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/_AdminLayout/Index.cshtml";
@@ -21,7 +21,7 @@
                                 <div class="color-card">
                                     <p class="mb-0 color-card-head">Müşteriler</p>
                                     <h2 class="text-white">
-                                        @ViewBag.TestimonialCount<span class="h5"> :)</span>
+                                        @((ViewBag.TestimonialCount ?? 0))<span class="h5"> :)</span>
                                     </h2>
                                 </div>
                                 <i class="card-icon-indicator mdi mdi-plus-circle bg-inverse-icon-warning"></i>
@@ -37,7 +37,7 @@
                                 <div class="color-card">
                                     <p class="mb-0 color-card-head">Hizmetler</p>
                                     <h2 class="text-white">
-                                        @ViewBag.ServiceCount<span class="h5"> :)</span>
+                                        @((ViewBag.ServiceCount ?? 0))<span class="h5"> :)</span>
                                     </h2>
                                 </div>
                                 <i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>

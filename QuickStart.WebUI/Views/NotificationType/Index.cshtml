@@ -1,38 +1,26 @@
-﻿@model List<QuickStart.WebUI.Dtos.NotificationTypes.ResultNotificationTypeDto>
+@model List<QuickStart.WebUI.Models.ResultNotificationTypeDto>
 @{
-    ViewData["Title"] = "Bildirim Türleri";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
 }
 
-<div class="col-lg-12 grid-margin stretch-card">
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Bildirim Türü Yönetimi</h4>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Tür Adı</th>
-                            <th>Sil</th>
-                            <th>Güncelle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.NotificationTypeId</td>
-                                <td>@item.Name</td>
-                                <td><a href="/NotificationType/Delete/@item.NotificationTypeId" class="btn btn-danger">Sil</a></td>
-                                <td><a href="/NotificationType/Edit/@item.NotificationTypeId" class="btn btn-success">Güncelle</a></td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-                <br />
-                <a href="/NotificationType/Create" class="btn btn-primary">Yeni Tür Ekle</a>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ad</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NotificationTypeId</td>
+                <td>@item.Name</td>
+                <td><a href="/NotificationType/DeleteNotificationType/@item.NotificationTypeId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/NotificationType/UpdateNotificationType/@item.NotificationTypeId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/NotificationType/CreateNotificationType" class="btn btn-info">Yeni Tür</a>
 </div>

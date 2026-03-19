@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews()
     .AddRazorRuntimeCompilation(); 
 
-// HttpClient servisi ekle (API'ye istek atmak için)
+// HttpClient servisi ekle (API'ye istek atmak iï¿½in)
 builder.Services.AddHttpClient();
+builder.Services.AddScoped<QuickStart.WebUI.Services.ApiClient>();
 
 var app = builder.Build();
 

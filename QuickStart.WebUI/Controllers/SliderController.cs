@@ -1,89 +1,58 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.Sliders;
-using System.Text;
+using QuickStart.WebUI.Dtos.Slider;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.Controllers
 {
     public class SliderController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public SliderController(IHttpClientFactory httpClientFactory)
+        public SliderController(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7121/api/Slider");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultSliderDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            var values = await _apiClient.GetAsync<List<ResultSliderDto>>("api/Slider");
+            return View(values ?? new List<ResultSliderDto>());
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CreateSlider()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateSliderDto createSliderDto)
+        public async Task<IActionResult> CreateSlider(CreateSliderDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createSliderDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7121/api/Slider", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(createSliderDto);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"https://localhost:7121/api/Slider/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View();
+            var ok = await _apiClient.PostAsync("api/Slider", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> UpdateSlider(int id)
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7121/api/Slider/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateSliderDto>(jsonData);
-                return View(values);
-            }
-            return View();
+            var value = await _apiClient.GetAsync<UpdateSliderDto>($"api/Slider/{id}");
+            return View(value ?? new UpdateSliderDto { SliderId = id });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(UpdateSliderDto updateSliderDto)
+        public async Task<IActionResult> UpdateSlider(UpdateSliderDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateSliderDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7121/api/Slider", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(updateSliderDto);
+            var ok = await _apiClient.PutAsync("api/Slider", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
+        }
+
+        public async Task<IActionResult> DeleteSlider(int id)
+        {
+            var ok = await _apiClient.DeleteAsync($"api/Slider/{id}");
+            if (ok) return RedirectToAction("Index");
+            return BadRequest();
         }
     }
 }

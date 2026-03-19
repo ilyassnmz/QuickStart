@@ -1,0 +1,16 @@
+@model List<QuickStart.WebUI.Models.ResultClientDto>
+
+<section id="clients" class="clients section">
+    <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+            @foreach (var item in Model ?? new List<QuickStart.WebUI.Models.ResultClientDto>())
+            {
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                    <a href="@(string.IsNullOrWhiteSpace(item.WebsiteUrl) ? "#" : item.WebsiteUrl)" target="_blank" rel="noopener noreferrer">
+                        <img src="@item.LogoUrl" class="img-fluid" alt="@item.Name">
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

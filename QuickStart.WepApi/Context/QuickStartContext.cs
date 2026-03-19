@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using QuickStart.WepApi.Entities;
 using QuickStart.WepApi.Entity;
 
@@ -19,5 +19,9 @@ namespace QuickStart.WepApi.Context
         public DbSet<Feature> Features { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
+        public DbSet<Chef> Chefs { get; set; }
     }
 }

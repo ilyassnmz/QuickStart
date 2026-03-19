@@ -1,27 +1,20 @@
-﻿@model List<QuickStart.WebUI.Dtos.Sliders.ResultSliderDto>
-@{
-    Layout = null;
-}
+@model List<QuickStart.WebUI.Models.ResultSliderDto>
 
-<!-- Hero Section - Slider -->
 <section id="hero" class="hero section">
+    @{
+        var slide = (Model ?? new List<QuickStart.WebUI.Models.ResultSliderDto>())
+            .FirstOrDefault(x => x.IsActive) ?? Model?.FirstOrDefault();
+    }
     <div class="hero-bg">
-        <img src="/QuickStart-1.0.0/assets/img/hero-bg-light.webp" alt="">
+        <img src="@(slide?.ImagesUrl ?? Url.Content("~/QuickStart-1.0.0/assets/img/hero-bg-light.webp"))" alt="">
     </div>
     <div class="container text-center">
-    @if(Model != null) {
-        @foreach(var item in Model) {
-        <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-            <h1 data-aos="fade-up"><span>@item.Title</span></h1>
-            <p data-aos="fade-up" data-aos-delay="100">@item.Description<br></p>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 data-aos="fade-up">@((slide?.Title ?? "Welcome to") + " ")<span>QuickStart</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">@((slide?.Description ?? "Quickly start your project now and set the stage for success"))</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                <a href="#about" class="btn-get-started">Başlayın</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Videoyu İzle</span></a>
+                <a href="#about" class="btn-get-started">Get Started</a>
             </div>
-            <img src="@item.ImageUrl" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
-        }
-    }
     </div>
 </section>
-<!-- /Hero Section -->

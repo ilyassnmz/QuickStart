@@ -1,27 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.ViewComponents
 {
     public class _DefaultFeatureComponentPartial : ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
-        public _DefaultFeatureComponentPartial(IHttpClientFactory httpClientFactory)
+        private readonly Services.ApiClient _apiClient;
+        public _DefaultFeatureComponentPartial(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7051/api/Feature");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultFeatureDto>>(jsonData);
-                return View(values);
-            }
-            return View(new List<ResultFeatureDto>());
+            var values = await _apiClient.GetAsync<List<ResultFeatureDto>>("api/Feature");
+            return View(values ?? new List<ResultFeatureDto>());
         }
     }
 }

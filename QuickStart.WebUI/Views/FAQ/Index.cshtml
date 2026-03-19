@@ -1,42 +1,32 @@
-﻿@model List<QuickStart.WebUI.Dtos.FAQs.ResultFAQDto>
+@model List<QuickStart.WebUI.Models.ResultFAQDto>
 @{
-    ViewData["Title"] = "SSS";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
 }
 
-<div class="col-lg-12 grid-margin stretch-card">
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Sıkça Sorulan Sorular (SSS) Yönetimi</h4>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Sıra</th>
-                            <th>Soru</th>
-                            <th>Cevap</th>
-                            <th>Durum</th>
-                            <th>Sil</th>
-                            <th>Güncelle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.Order</td>
-                                <td>@item.Question</td>
-                                <td>@(item.Answer.Length > 50 ? item.Answer.Substring(0, 50) + "..." : item.Answer)</td>
-                                <td>@(item.IsActive ? "Aktif" : "Pasif")</td>
-                                <td><a href="/FAQ/Delete/@item.FAQId" class="btn btn-danger">Sil</a></td>
-                                <td><a href="/FAQ/Edit/@item.FAQId" class="btn btn-success">Güncelle</a></td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-                <br />
-                <a href="/FAQ/Create" class="btn btn-primary">Yeni Soru Ekle</a>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Soru</th>
+            <th>Cevap</th>
+            <th>Sıra</th>
+            <th>Aktif</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FAQId</td>
+                <td>@item.Question</td>
+                <td>@item.Answer</td>
+                <td>@item.Order</td>
+                <td>@(item.IsActive ? "Evet" : "Hayır")</td>
+                <td><a href="/FAQ/DeleteFAQ/@item.FAQId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/FAQ/UpdateFAQ/@item.FAQId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/FAQ/CreateFAQ" class="btn btn-info">Yeni Soru</a>
 </div>

@@ -1,89 +1,58 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.ContactInfos;
-using System.Text;
+using QuickStart.WebUI.Dtos.ContactInfo;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.Controllers
 {
     public class ContactInfoController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public ContactInfoController(IHttpClientFactory httpClientFactory)
+        public ContactInfoController(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7121/api/ContactInfo");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultContactInfoDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            var values = await _apiClient.GetAsync<List<ResultContactInfoDto>>("api/ContactInfo");
+            return View(values ?? new List<ResultContactInfoDto>());
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CreateContactInfo()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateContactInfoDto createContactInfoDto)
+        public async Task<IActionResult> CreateContactInfo(CreateContactInfoDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createContactInfoDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7121/api/ContactInfo", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(createContactInfoDto);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"https://localhost:7121/api/ContactInfo/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View();
+            var ok = await _apiClient.PostAsync("api/ContactInfo", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> UpdateContactInfo(int id)
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7121/api/ContactInfo/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateContactInfoDto>(jsonData);
-                return View(values);
-            }
-            return View();
+            var value = await _apiClient.GetAsync<UpdateContactInfoDto>($"api/ContactInfo/{id}");
+            return View(value ?? new UpdateContactInfoDto { ContactInfoId = id });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(UpdateContactInfoDto updateContactInfoDto)
+        public async Task<IActionResult> UpdateContactInfo(UpdateContactInfoDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateContactInfoDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7121/api/ContactInfo", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(updateContactInfoDto);
+            var ok = await _apiClient.PutAsync("api/ContactInfo", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
+        }
+
+        public async Task<IActionResult> DeleteContactInfo(int id)
+        {
+            var ok = await _apiClient.DeleteAsync($"api/ContactInfo/{id}");
+            if (ok) return RedirectToAction("Index");
+            return BadRequest();
         }
     }
 }

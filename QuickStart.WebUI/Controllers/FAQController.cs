@@ -1,89 +1,58 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.FAQs;
-using System.Text;
+using QuickStart.WebUI.Dtos.FAQ;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.Controllers
 {
     public class FAQController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public FAQController(IHttpClientFactory httpClientFactory)
+        public FAQController(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7121/api/FAQ");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultFAQDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            var values = await _apiClient.GetAsync<List<ResultFAQDto>>("api/FAQ");
+            return View(values ?? new List<ResultFAQDto>());
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CreateFAQ()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateFAQDto createFAQDto)
+        public async Task<IActionResult> CreateFAQ(CreateFAQDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createFAQDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7121/api/FAQ", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(createFAQDto);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"https://localhost:7121/api/FAQ/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View();
+            var ok = await _apiClient.PostAsync("api/FAQ", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> UpdateFAQ(int id)
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7121/api/FAQ/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateFAQDto>(jsonData);
-                return View(values);
-            }
-            return View();
+            var value = await _apiClient.GetAsync<UpdateFAQDto>($"api/FAQ/{id}");
+            return View(value ?? new UpdateFAQDto { FAQId = id });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(UpdateFAQDto updateFAQDto)
+        public async Task<IActionResult> UpdateFAQ(UpdateFAQDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateFAQDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7121/api/FAQ", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(updateFAQDto);
+            var ok = await _apiClient.PutAsync("api/FAQ", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
+        }
+
+        public async Task<IActionResult> DeleteFAQ(int id)
+        {
+            var ok = await _apiClient.DeleteAsync($"api/FAQ/{id}");
+            if (ok) return RedirectToAction("Index");
+            return BadRequest();
         }
     }
 }

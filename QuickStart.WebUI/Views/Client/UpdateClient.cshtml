@@ -1,0 +1,27 @@
+@model QuickStart.WebUI.Dtos.Clients.UpdateClientDto
+@{
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="ClientId" />
+        <label>İsim</label>
+        <input asp-for="Name" class="form-control" />
+        <br />
+        <label>Logo Url</label>
+        <input asp-for="LogoUrl" class="form-control" />
+        <br />
+        <label>Website Url</label>
+        <input asp-for="WebsiteUrl" class="form-control" />
+        <br />
+        <label>Sıra</label>
+        <input asp-for="Order" class="form-control" />
+        <br />
+        <label>Aktif mi?</label>
+        <input asp-for="IsActive" class="form-check-input" />
+        <br /><br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+</div>

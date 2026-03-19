@@ -1,4 +1,4 @@
-﻿namespace QuickStart.WebUI.Models
+namespace QuickStart.WebUI.Models
 {
     public class ResultFAQDto
     {

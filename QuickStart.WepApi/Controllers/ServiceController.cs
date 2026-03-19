@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
 using QuickStart.WepApi.DTOs.ServiceDTOs;
 using QuickStart.WepApi.Entities;
@@ -30,6 +30,13 @@ namespace QuickStart.WepApi.Controllers
                 })
                 .ToList();
             return Ok(values);
+        }
+
+        [HttpGet("count")]
+        public IActionResult ServiceCount()
+        {
+            var count = _context.Services.Count();
+            return Ok(count);
         }
 
         [HttpGet("{id}")]

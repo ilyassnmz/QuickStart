@@ -209,7 +209,6 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\De
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\staticwebassets.build.json.cache
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\QuickSta.025168FB.Up2Date
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\QuickStart.WebUI.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\refint\QuickStart.WebUI.dll
@@ -511,3 +510,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\bin\De
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\QuickStart.WebUI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WebUI\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

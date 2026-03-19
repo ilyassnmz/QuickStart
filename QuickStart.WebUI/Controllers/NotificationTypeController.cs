@@ -1,89 +1,58 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using QuickStart.WebUI.Dtos.NotificationTypes;
-using System.Text;
+using QuickStart.WebUI.Dtos.NotificationType;
+using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.Controllers
 {
     public class NotificationTypeController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public NotificationTypeController(IHttpClientFactory httpClientFactory)
+        public NotificationTypeController(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7121/api/NotificationType");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultNotificationTypeDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            var values = await _apiClient.GetAsync<List<ResultNotificationTypeDto>>("api/NotificationType");
+            return View(values ?? new List<ResultNotificationTypeDto>());
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CreateNotificationType()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateNotificationTypeDto createNotificationTypeDto)
+        public async Task<IActionResult> CreateNotificationType(CreateNotificationTypeDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createNotificationTypeDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7121/api/NotificationType", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(createNotificationTypeDto);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"https://localhost:7121/api/NotificationType/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View();
+            var ok = await _apiClient.PostAsync("api/NotificationType", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> UpdateNotificationType(int id)
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7121/api/NotificationType/{id}");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateNotificationTypeDto>(jsonData);
-                return View(values);
-            }
-            return View();
+            var value = await _apiClient.GetAsync<UpdateNotificationTypeDto>($"api/NotificationType/{id}");
+            return View(value ?? new UpdateNotificationTypeDto { NotificationTypeId = id });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(UpdateNotificationTypeDto updateNotificationTypeDto)
+        public async Task<IActionResult> UpdateNotificationType(UpdateNotificationTypeDto model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateNotificationTypeDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7121/api/NotificationType", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(updateNotificationTypeDto);
+            var ok = await _apiClient.PutAsync("api/NotificationType", model);
+            if (ok) return RedirectToAction("Index");
+            return View(model);
+        }
+
+        public async Task<IActionResult> DeleteNotificationType(int id)
+        {
+            var ok = await _apiClient.DeleteAsync($"api/NotificationType/{id}");
+            if (ok) return RedirectToAction("Index");
+            return BadRequest();
         }
     }
 }

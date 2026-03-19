@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class DefaultHeadComponentPartial : ViewComponent
+    [ViewComponent(Name = "_DefaultHeadComponentPartial")]
+    public class _DefaultHeadComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

@@ -18,11 +18,18 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.InjectStylesheet("/swagger-custom.css");
+    });
 }
 
 app.UseHttpsRedirection();
+
+// swagger-custom.css için static file servisi
+app.UseStaticFiles();
 
 app.UseAuthorization();
 

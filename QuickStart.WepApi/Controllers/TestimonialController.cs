@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WepApi.Context;
 using QuickStart.WepApi.DTOs.TestimonialDTOs;
 using QuickStart.WepApi.Entities;
@@ -31,6 +31,13 @@ namespace QuickStart.WepApi.Controllers
                 })
                 .ToList();
             return Ok(values);
+        }
+
+        [HttpGet("count")]
+        public IActionResult TestimonialCount()
+        {
+            var count = _context.Testimonials.Count();
+            return Ok(count);
         }
 
         [HttpGet("{id}")]

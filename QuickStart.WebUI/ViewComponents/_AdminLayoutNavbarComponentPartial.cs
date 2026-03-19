@@ -1,31 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WebUI.Dtos.Notification;
 
 namespace QuickStart.WebUI.ViewComponents
 {
     public class _AdminLayoutNavbarComponentPartial:ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public _AdminLayoutNavbarComponentPartial(IHttpClientFactory httpClientFactory)
+        public _AdminLayoutNavbarComponentPartial(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var client =_httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7051/api/Notification/GetNotificationListwithNotificationType");
-
-            if(response.IsSuccessStatusCode) 
-            { 
-               var jsonData=await response.Content.ReadAsStringAsync();
-               var values = JsonConvert.DeserializeObject<List<ResultNotificaitonWithNotificationTypeDto>>(jsonData);
-               return View(values);
-
-              }
-            return View();
+            var values = await _apiClient.GetAsync<List<ResultNotificaitonWithNotificationTypeDto>>(
+                "api/Notification/GetNotificationListwithNotificationType");
+            return View(values ?? new List<ResultNotificaitonWithNotificationTypeDto>());
         }
     }
 }

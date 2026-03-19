@@ -1,27 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace QuickStart.WebUI.Controllers
 {
     public class DashboardController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Services.ApiClient _apiClient;
 
-        public DashboardController(IHttpClientFactory httpClientFactory)
+        public DashboardController(Services.ApiClient apiClient)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiClient = apiClient;
         }
 
         public async Task<IActionResult> Index()
         {
-            var client=_httpClientFactory.CreateClient();
-
-            var responseMessage = await client.GetAsync("https://localhost:7051/api/Testimonial/TestimonialCount");
-            var JsonData=await responseMessage.Content.ReadAsStringAsync();
-            ViewBag.TestimonialCount = JsonData;
-
-            var responseMessage1 = await client.GetAsync("https://localhost:7051/api/Service/ServiceCount");
-            var JsonData1 = await responseMessage1.Content.ReadAsStringAsync();
-            ViewBag.ServiceCount = JsonData1;
+            ViewBag.TestimonialCount = await _apiClient.GetAsync<int>("api/Testimonial/count");
+            ViewBag.ServiceCount = await _apiClient.GetAsync<int>("api/Service/count");
             return View();
         }
     }

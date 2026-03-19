@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using QuickStart.WepApi.Context;
+using QuickStart.WepApi.Dto;
 using QuickStart.WepApi.DTOs.NotificationDTOs;
 using QuickStart.WepApi.Entities;
 using QuickStart.WepApi.Entity;
@@ -23,7 +24,26 @@ namespace QuickStart.WepApi.Controllers
         {
             var values = _context.Notifications
                 .Include(x => x.NotificationType)
-                .Select(x => new ResultNotificationDto
+                .Select(x => new ResultNotificationWithNotificationTypeDto
+                {
+                    NotificationId = x.NotificationId,
+                    Title = x.Title,
+                    Content = x.Content,
+                    CreatedAt = x.CreatedAt,
+                    IsRead = x.IsRead,
+                    NotificationTypeId = x.NotificationTypeId,
+                    NotificationTypeName = x.NotificationType.Name
+                })
+                .ToList();
+            return Ok(values);
+        }
+
+        [HttpGet("GetNotificationListwithNotificationType")]
+        public IActionResult GetNotificationListwithNotificationType()
+        {
+            var values = _context.Notifications
+                .Include(x => x.NotificationType)
+                .Select(x => new ResultNotificationWithNotificationTypeDto
                 {
                     NotificationId = x.NotificationId,
                     Title = x.Title,
@@ -47,7 +67,7 @@ namespace QuickStart.WepApi.Controllers
             if (value == null)
                 return NotFound();
 
-            var result = new ResultNotificationDto
+            var result = new ResultNotificationWithNotificationTypeDto
             {
                 NotificationId = value.NotificationId,
                 Title = value.Title,

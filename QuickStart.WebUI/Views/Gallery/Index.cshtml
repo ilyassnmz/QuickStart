@@ -1,0 +1,32 @@
+@model List<QuickStart.WebUI.Models.ResultGalleryDto>
+@{
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Resim</th>
+            <th>Sıra</th>
+            <th>Aktif</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.GalleryId</td>
+                <td>@item.Title</td>
+                <td>@item.ImageUrl</td>
+                <td>@item.Order</td>
+                <td>@(item.IsActive ? "Evet" : "Hayır")</td>
+                <td><a href="/Gallery/DeleteGallery/@item.GalleryId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Gallery/UpdateGallery/@item.GalleryId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Gallery/CreateGallery" class="btn btn-info">Yeni Görsel</a>
+</div>

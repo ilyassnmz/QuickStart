@@ -70,7 +70,6 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\D
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\staticwebassets.build.json.cache
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\QuickSta.8FD29E4C.Up2Date
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\QuickStart.WepApi.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\refint\QuickStart.WepApi.dll
@@ -286,3 +285,5 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\bin\D
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+c:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\bin\Debug\net6.0\QuickStart.WepApi.staticwebassets.runtime.json
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart\QuickStart.WepApi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

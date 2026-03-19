@@ -1,0 +1,19 @@
+@model QuickStart.WebUI.Dtos.Subscribe.UpdateSubscribeDto
+@{
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="SubscribeId" />
+        <input type="hidden" asp-for="CreatedAt" />
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+        <br />
+        <label>Aktif mi?</label>
+        <input asp-for="IsActive" class="form-check-input" />
+        <br /><br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+</div>

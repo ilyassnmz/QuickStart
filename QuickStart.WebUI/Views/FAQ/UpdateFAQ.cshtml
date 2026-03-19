@@ -1,0 +1,24 @@
+@model QuickStart.WebUI.Dtos.FAQ.UpdateFAQDto
+@{
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="FAQId" />
+        <label>Soru</label>
+        <input asp-for="Question" class="form-control" />
+        <br />
+        <label>Cevap</label>
+        <textarea asp-for="Answer" class="form-control" rows="3"></textarea>
+        <br />
+        <label>Sıra</label>
+        <input asp-for="Order" class="form-control" />
+        <br />
+        <label>Aktif mi?</label>
+        <input asp-for="IsActive" class="form-check-input" />
+        <br /><br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+</div>
