@@ -4,11 +4,11 @@ using QuickStart.WebUI.Models;
 
 namespace QuickStart.WebUI.ViewComponents
 {
-    public class DefaultFooterComponentPartial : ViewComponent
+    public class _DefaultFooterComponentPartial : ViewComponent
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public DefaultFooterComponentPartial(IHttpClientFactory httpClientFactory)
+        public _DefaultFooterComponentPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
