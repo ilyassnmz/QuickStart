@@ -1,7 +1,9 @@
-@model List<QuickStartProject.WebUILayer.DTOs.FaqDTOs.ResultFaqDTO>
+﻿@model List<QuickStartProject.WebUILayer.DTOs.FaqDTOs.ResultFaqDTO>
 @{
     var first = true;
 }
+@if (Model != null)
+{
 <section id="faq" class="faq section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Sıkça Sorulan Sorular</h2>
@@ -27,3 +29,5 @@
         </div>
     </div>
 </section>
+}
+

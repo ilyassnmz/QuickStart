@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WebApiLayer.Contexts;
 using QuickStart.WebApiLayer.DTOs.ServiceDTOs;
 using QuickStart.WebApiLayer.Entities;
 
 namespace QuickStart.WebApiLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Service")]
     [ApiController]
     public class ServicesController : ControllerBase
     {

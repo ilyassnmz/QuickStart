@@ -1,13 +1,15 @@
-@model List<QuickStartProject.WebUILayer.DTOs.ServiceDTOs.ResultServiceDTO>
+ï»¿@model List<QuickStartProject.WebUILayer.DTOs.ServiceDTOs.ResultServiceDTO>
 @{
     var delay = 100;
     var colors = new[] { "item-cyan", "item-orange", "item-teal", "item-red", "item-indigo", "item-pink" };
     var idx = 0;
 }
+@if (Model != null)
+{
 <section id="services" class="services section light-background">
     <div class="container section-title" data-aos="fade-up">
         <h2>Hizmetler</h2>
-        <p>Ýþletmenizi geleceðe taþýmak için ihtiyacýnýz olan tüm dijital çözümleri, yenilikçi ve sonuç odaklý bir yaklaþýmla sunuyoruz.</p>
+        <p>ï¿½ï¿½letmenizi geleceï¿½e taï¿½ï¿½mak iï¿½in ihtiyacï¿½nï¿½z olan tï¿½m dijital ï¿½ï¿½zï¿½mleri, yenilikï¿½i ve sonuï¿½ odaklï¿½ bir yaklaï¿½ï¿½mla sunuyoruz.</p>
     </div>
     <div class="container">
         <div class="row g-5">
@@ -29,3 +31,5 @@
         </div>
     </div>
 </section>
+}
+

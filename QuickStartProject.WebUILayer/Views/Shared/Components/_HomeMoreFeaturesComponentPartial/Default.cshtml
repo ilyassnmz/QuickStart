@@ -1,13 +1,15 @@
-@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
+ï»¿@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
 @{
     var items = Model.Take(4).ToList();
 }
+@if (Model != null)
+{
 <section id="more-features" class="more-features section">
     <div class="container">
         <div class="row justify-content-around gy-4">
             <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                <h3>Dijital Dönüþümünüzü Hýzlandýran Güçlü Altyapý</h3>
-                <p>Ýþ süreçlerinizi optimize etmek ve rekabette öne çýkmak için ihtiyacýnýz olan yenilikçi araçlarý sunuyoruz. Geliþmiþ teknolojilerimizle zamandan tasarruf edin ve verimliliðinizi en üst düzeye çýkarýn.</p>
+                <h3>Dijital Dï¿½nï¿½ï¿½ï¿½mï¿½nï¿½zï¿½ Hï¿½zlandï¿½ran Gï¿½ï¿½lï¿½ Altyapï¿½</h3>
+                <p>ï¿½ï¿½ sï¿½reï¿½lerinizi optimize etmek ve rekabette ï¿½ne ï¿½ï¿½kmak iï¿½in ihtiyacï¿½nï¿½z olan yenilikï¿½i araï¿½larï¿½ sunuyoruz. Geliï¿½miï¿½ teknolojilerimizle zamandan tasarruf edin ve verimliliï¿½inizi en ï¿½st dï¿½zeye ï¿½ï¿½karï¿½n.</p>
                 <div class="row">
                     @foreach (var item in items)
                     {
@@ -30,3 +32,5 @@
         </div>
     </div>
 </section>
+}
+

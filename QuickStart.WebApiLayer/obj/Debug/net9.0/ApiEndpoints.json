@@ -2,7 +2,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.AboutsController",
     "Method": "GetList",
-    "RelativePath": "api/Abouts",
+    "RelativePath": "api/About",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.AboutsController",
     "Method": "Create",
-    "RelativePath": "api/Abouts",
+    "RelativePath": "api/About",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.AboutsController",
     "Method": "Update",
-    "RelativePath": "api/Abouts",
+    "RelativePath": "api/About",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.AboutsController",
     "Method": "Delete",
-    "RelativePath": "api/Abouts/{id}",
+    "RelativePath": "api/About/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -60,7 +60,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.AboutsController",
     "Method": "GetById",
-    "RelativePath": "api/Abouts/{id}",
+    "RelativePath": "api/About/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -76,7 +76,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ContactsController",
     "Method": "GetList",
-    "RelativePath": "api/Contacts",
+    "RelativePath": "api/Contact",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -86,7 +86,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ContactsController",
     "Method": "Create",
-    "RelativePath": "api/Contacts",
+    "RelativePath": "api/Contact",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -102,7 +102,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ContactsController",
     "Method": "Update",
-    "RelativePath": "api/Contacts",
+    "RelativePath": "api/Contact",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -118,7 +118,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ContactsController",
     "Method": "Delete",
-    "RelativePath": "api/Contacts/{id}",
+    "RelativePath": "api/Contact/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -134,7 +134,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ContactsController",
     "Method": "GetById",
-    "RelativePath": "api/Contacts/{id}",
+    "RelativePath": "api/Contact/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -150,7 +150,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FaqsController",
     "Method": "GetList",
-    "RelativePath": "api/Faqs",
+    "RelativePath": "api/Faq",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -160,7 +160,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FaqsController",
     "Method": "Create",
-    "RelativePath": "api/Faqs",
+    "RelativePath": "api/Faq",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -176,7 +176,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FaqsController",
     "Method": "Update",
-    "RelativePath": "api/Faqs",
+    "RelativePath": "api/Faq",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -192,7 +192,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FaqsController",
     "Method": "Delete",
-    "RelativePath": "api/Faqs/{id}",
+    "RelativePath": "api/Faq/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -208,81 +208,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FaqsController",
     "Method": "GetById",
-    "RelativePath": "api/Faqs/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
-    "Method": "GetList",
-    "RelativePath": "api/FeaturedServices",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
-    "Method": "Create",
-    "RelativePath": "api/FeaturedServices",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "QuickStart.WebApiLayer.DTOs.FeaturedServiceDTOs.CreateFeaturedServiceDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
-    "Method": "Update",
-    "RelativePath": "api/FeaturedServices",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "QuickStart.WebApiLayer.DTOs.FeaturedServiceDTOs.UpdateFeaturedServiceDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
-    "Method": "Delete",
-    "RelativePath": "api/FeaturedServices/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
-    "Method": "GetById",
-    "RelativePath": "api/FeaturedServices/{id}",
+    "RelativePath": "api/Faq/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -298,7 +224,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturesController",
     "Method": "GetList",
-    "RelativePath": "api/Features",
+    "RelativePath": "api/Feature",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -308,7 +234,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturesController",
     "Method": "Create",
-    "RelativePath": "api/Features",
+    "RelativePath": "api/Feature",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -324,7 +250,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturesController",
     "Method": "Update",
-    "RelativePath": "api/Features",
+    "RelativePath": "api/Feature",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -340,7 +266,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturesController",
     "Method": "Delete",
-    "RelativePath": "api/Features/{id}",
+    "RelativePath": "api/Feature/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -356,7 +282,81 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturesController",
     "Method": "GetById",
-    "RelativePath": "api/Features/{id}",
+    "RelativePath": "api/Feature/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
+    "Method": "GetList",
+    "RelativePath": "api/FeaturedService",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
+    "Method": "Create",
+    "RelativePath": "api/FeaturedService",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "QuickStart.WebApiLayer.DTOs.FeaturedServiceDTOs.CreateFeaturedServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
+    "Method": "Update",
+    "RelativePath": "api/FeaturedService",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "QuickStart.WebApiLayer.DTOs.FeaturedServiceDTOs.UpdateFeaturedServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
+    "Method": "Delete",
+    "RelativePath": "api/FeaturedService/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuickStart.WebApiLayer.Controllers.FeaturedServicesController",
+    "Method": "GetById",
+    "RelativePath": "api/FeaturedService/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -372,7 +372,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.MessagesController",
     "Method": "GetList",
-    "RelativePath": "api/Messages",
+    "RelativePath": "api/Message",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -382,7 +382,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.MessagesController",
     "Method": "Create",
-    "RelativePath": "api/Messages",
+    "RelativePath": "api/Message",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -398,7 +398,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.MessagesController",
     "Method": "Update",
-    "RelativePath": "api/Messages",
+    "RelativePath": "api/Message",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -414,7 +414,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.MessagesController",
     "Method": "Delete",
-    "RelativePath": "api/Messages/{id}",
+    "RelativePath": "api/Message/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -430,7 +430,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.MessagesController",
     "Method": "GetById",
-    "RelativePath": "api/Messages/{id}",
+    "RelativePath": "api/Message/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -446,7 +446,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.NewslettersController",
     "Method": "GetList",
-    "RelativePath": "api/Newsletters",
+    "RelativePath": "api/Newsletter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -456,7 +456,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.NewslettersController",
     "Method": "Create",
-    "RelativePath": "api/Newsletters",
+    "RelativePath": "api/Newsletter",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -472,7 +472,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.NewslettersController",
     "Method": "Update",
-    "RelativePath": "api/Newsletters",
+    "RelativePath": "api/Newsletter",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -488,7 +488,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.NewslettersController",
     "Method": "Delete",
-    "RelativePath": "api/Newsletters/{id}",
+    "RelativePath": "api/Newsletter/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -504,7 +504,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.NewslettersController",
     "Method": "GetById",
-    "RelativePath": "api/Newsletters/{id}",
+    "RelativePath": "api/Newsletter/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -520,7 +520,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.PricingsController",
     "Method": "GetList",
-    "RelativePath": "api/Pricings",
+    "RelativePath": "api/Pricing",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -530,7 +530,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.PricingsController",
     "Method": "Create",
-    "RelativePath": "api/Pricings",
+    "RelativePath": "api/Pricing",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -546,7 +546,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.PricingsController",
     "Method": "Update",
-    "RelativePath": "api/Pricings",
+    "RelativePath": "api/Pricing",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -562,7 +562,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.PricingsController",
     "Method": "Delete",
-    "RelativePath": "api/Pricings/{id}",
+    "RelativePath": "api/Pricing/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -578,7 +578,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.PricingsController",
     "Method": "GetById",
-    "RelativePath": "api/Pricings/{id}",
+    "RelativePath": "api/Pricing/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -594,7 +594,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ServicesController",
     "Method": "GetList",
-    "RelativePath": "api/Services",
+    "RelativePath": "api/Service",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -604,7 +604,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ServicesController",
     "Method": "Create",
-    "RelativePath": "api/Services",
+    "RelativePath": "api/Service",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -620,7 +620,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ServicesController",
     "Method": "Update",
-    "RelativePath": "api/Services",
+    "RelativePath": "api/Service",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -636,7 +636,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ServicesController",
     "Method": "Delete",
-    "RelativePath": "api/Services/{id}",
+    "RelativePath": "api/Service/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -652,7 +652,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.ServicesController",
     "Method": "GetById",
-    "RelativePath": "api/Services/{id}",
+    "RelativePath": "api/Service/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -668,7 +668,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.TestimonialsController",
     "Method": "GetList",
-    "RelativePath": "api/Testimonials",
+    "RelativePath": "api/Testimonial",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -678,7 +678,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.TestimonialsController",
     "Method": "Create",
-    "RelativePath": "api/Testimonials",
+    "RelativePath": "api/Testimonial",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -694,7 +694,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.TestimonialsController",
     "Method": "Update",
-    "RelativePath": "api/Testimonials",
+    "RelativePath": "api/Testimonial",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -710,7 +710,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.TestimonialsController",
     "Method": "Delete",
-    "RelativePath": "api/Testimonials/{id}",
+    "RelativePath": "api/Testimonial/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -726,7 +726,7 @@
   {
     "ContainingType": "QuickStart.WebApiLayer.Controllers.TestimonialsController",
     "Method": "GetById",
-    "RelativePath": "api/Testimonials/{id}",
+    "RelativePath": "api/Testimonial/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

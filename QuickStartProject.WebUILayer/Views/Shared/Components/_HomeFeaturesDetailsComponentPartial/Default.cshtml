@@ -1,7 +1,9 @@
-@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
+﻿@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
 @{
     var details = Model.Take(2).ToList();
 }
+@if (Model != null)
+{
 <section id="features-details" class="features-details section">
     <div class="container">
         @for (var i = 0; i < details.Count; i++)
@@ -23,3 +25,5 @@
         }
     </div>
 </section>
+}
+

@@ -1,4 +1,6 @@
-@model QuickStartProject.WebUILayer.DTOs.ContactDTOs.ResultContactDTO
+﻿@model QuickStartProject.WebUILayer.DTOs.ContactDTOs.ResultContactDTO
+@if (Model != null)
+{
 <section id="contact" class="contact section">
     <div class="container section-title" data-aos="fade-up">
         <h2>@Model.Title</h2>
@@ -64,3 +66,5 @@
         </div>
     </div>
 </section>
+}
+

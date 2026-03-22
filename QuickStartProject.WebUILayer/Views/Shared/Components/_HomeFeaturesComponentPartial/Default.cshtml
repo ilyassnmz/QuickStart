@@ -1,9 +1,11 @@
-@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
+﻿@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
 @{
     var tabIndex = 0;
     var take = Model.Take(3).ToList();
     var contentIndex = 0;
 }
+@if (Model != null)
+{
 <section id="features" class="features section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Özellikler</h2>
@@ -43,3 +45,5 @@
         </div>
     </div>
 </section>
+}
+

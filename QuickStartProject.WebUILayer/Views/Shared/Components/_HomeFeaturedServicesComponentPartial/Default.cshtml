@@ -1,8 +1,10 @@
-@using QuickStartProject.WebUILayer.DTOs.FeaturedServiceDTOs
+﻿@using QuickStartProject.WebUILayer.DTOs.FeaturedServiceDTOs
 @model List<ResultFeaturedServiceDTO>
 @{
     int count = 0;
 }
+@if (Model != null)
+{
 <section id="featured-services" class="featured-services section light-background">
     <div class="container">
         <div class="row gy-4">
@@ -22,3 +24,5 @@
         </div>
     </div>
 </section>
+}
+

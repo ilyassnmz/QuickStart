@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuickStart.WebApiLayer.Contexts;
 using QuickStart.WebApiLayer.DTOs.FeatureDTOs;
 using QuickStart.WebApiLayer.Entities;
 
 namespace QuickStart.WebApiLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Feature")]
     [ApiController]
     public class FeaturesController : ControllerBase
     {
