@@ -1,0 +1,100 @@
+@using QuickStartProject.WebUILayer.Areas.Admin.Models
+@{
+    ViewData["Title"] = "Kontrol Paneli";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    var rapidNews = ViewBag.RapidApiLast6 as List<Datum>;
+}
+
+<div class="pc-container">
+    <div class="pc-content">
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Kontrol Paneli</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/Admin/Dashboard/Index">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-6">
+                <a href="/Admin/Newsletter/Index" class="text-decoration-none">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="mb-2 f-w-400 text-muted">Bülten Aboneleri</h6>
+                                    <h4 class="mb-0">@ViewBag.NewsletterCount</h4>
+                                </div>
+                                <div class="avtar avtar-lg bg-light-primary">
+                                    <i class="ti ti-news f-24"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-6">
+                <a href="/Admin/Message/Index" class="text-decoration-none">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="mb-2 f-w-400 text-muted">Gelen Mesajlar</h6>
+                                    <h4 class="mb-0">@ViewBag.MessageCount</h4>
+                                </div>
+                                <div class="avtar avtar-lg bg-light-info">
+                                    <i class="ti ti-mail f-24"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="ti ti-news me-2"></i>Haberler</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Tarih</th>
+                                        <th>Başlık</th>
+                                        <th>Kaynak</th>
+                                        <th>Özet</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in rapidNews)
+                                    {
+                                        <tr>
+                                            <td>@item.published_datetime_utc.ToString("dd MMMM HH:mm")</td>
+                                            <td>@item.title</td>
+                                            <td>@item.source_name</td>
+                                            <td class="text-muted small">@(item.snippet?.Length > 80 ? item.snippet.Substring(0, 80) + "..." : item.snippet)</td>
+                                            <td>
+                                                <a href="@item.link" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Görüntüle</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

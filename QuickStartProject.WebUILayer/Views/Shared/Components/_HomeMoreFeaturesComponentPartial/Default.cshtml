@@ -1,0 +1,32 @@
+@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
+@{
+    var items = Model.Take(4).ToList();
+}
+<section id="more-features" class="more-features section">
+    <div class="container">
+        <div class="row justify-content-around gy-4">
+            <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Dijital Dönüþümünüzü Hýzlandýran Güçlü Altyapý</h3>
+                <p>Ýþ süreçlerinizi optimize etmek ve rekabette öne çýkmak için ihtiyacýnýz olan yenilikçi araçlarý sunuyoruz. Geliþmiþ teknolojilerimizle zamandan tasarruf edin ve verimliliðinizi en üst düzeye çýkarýn.</p>
+                <div class="row">
+                    @foreach (var item in items)
+                    {
+                        <div class="col-lg-6 icon-box d-flex">
+                            <i class="@item.Icon flex-shrink-0"></i>
+                            <div>
+                                <h4>@item.Title</h4>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            @if (items.Count > 0)
+            {
+                <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <img src="@items[0].ImageUrl" alt="">
+                </div>
+            }
+        </div>
+    </div>
+</section>

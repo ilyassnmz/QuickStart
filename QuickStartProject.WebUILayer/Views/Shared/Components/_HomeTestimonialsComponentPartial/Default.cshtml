@@ -1,0 +1,33 @@
+@model List<QuickStartProject.WebUILayer.DTOs.TestimonialDTOs.ResultTestimonialDTO>
+<section id="testimonials" class="testimonials section light-background">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Referanslar</h2>
+        <p>Baþarýmýzýn en büyük kanýtý, birlikte yol aldýðýmýz mutlu iþ ortaklarýmýzdýr. Kullanýcýlarýmýzýn deneyimlerine ve hakkýmýzda neler söylediklerine göz atýn.</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+                {"loop":true,"speed":600,"autoplay":{"delay":5000},"slidesPerView":"auto","pagination":{"el":".swiper-pagination","type":"bullets","clickable":true},"breakpoints":{"320":{"slidesPerView":1,"spaceBetween":40},"1200":{"slidesPerView":3,"spaceBetween":1}}}
+            </script>
+            <div class="swiper-wrapper">
+                @foreach (var item in Model)
+                {
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>@item.Content</p>
+                            <div class="profile mt-auto">
+                                <img src="@item.ImageUrl" class="testimonial-img" alt="">
+                                <h3>@item.Name</h3>
+                                <h4>@item.Role</h4>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>

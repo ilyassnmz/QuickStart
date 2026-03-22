@@ -1,0 +1,45 @@
+@model List<QuickStartProject.WebUILayer.DTOs.FeatureDTOs.ResultFeatureDTO>
+@{
+    var tabIndex = 0;
+    var take = Model.Take(3).ToList();
+    var contentIndex = 0;
+}
+<section id="features" class="features section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Özellikler</h2>
+        <p>İşletmenizi dijital dünyada bir adım öteye taşıyacak, kullanıcı deneyimini ve performansı zirveye çıkaracak yenilikçi özelliklerimizi keşfedin.</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 d-flex align-items-center">
+                <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+                
+                    @foreach (var item in take)
+                    {
+                        tabIndex++;
+                        <li class="nav-item">
+                            <a class="nav-link @(tabIndex == 1 ? "active show" : "")" data-bs-toggle="tab" data-bs-target="#features-tab-@tabIndex">
+                                <i class="@item.Icon"></i>
+                                <div>
+                                    <h4 class="d-none d-lg-block">@item.Title</h4>
+                                    <p>@item.Description</p>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+                    @foreach (var item in take)
+                    {
+                        contentIndex++;
+                        <div class="tab-pane fade @(contentIndex == 1 ? "active show" : "")" id="features-tab-@contentIndex">
+                            <img src="@item.ImageUrl" alt="" class="img-fluid">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
