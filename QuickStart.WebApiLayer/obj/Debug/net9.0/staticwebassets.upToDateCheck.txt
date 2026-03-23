@@ -1,0 +1,2 @@
+wwwroot\swagger-ui\custom-swagger.css
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer\wwwroot\swagger-ui\custom-swagger.css

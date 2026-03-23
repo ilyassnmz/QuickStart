@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|solutionrelative:quickstartproject.webuilayer\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{61F23510-6BBB-4A87-9AA3-2CE09FC8C747}|QuickStart.WebApiLayer\\QuickStart.WebApiLayer.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart1\\quickstart.webapilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61F23510-6BBB-4A87-9AA3-2CE09FC8C747}|QuickStart.WebApiLayer\\QuickStart.WebApiLayer.csproj|solutionrelative:quickstart.webapilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart1\\quickstartproject.webuilayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|solutionrelative:quickstartproject.webuilayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -18,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
@@ -36,15 +40,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-23T17:58:44.605Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStart.WebApiLayer\\Program.cs",
+              "RelativeDocumentMoniker": "QuickStart.WebApiLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStart.WebApiLayer\\Program.cs",
+              "RelativeToolTip": "QuickStart.WebApiLayer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T18:46:54.434Z",
               "EditorCaption": ""
             },
             {
@@ -54,6 +58,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T17:58:44.605Z",
+              "EditorCaption": ""
             }
           ]
         },

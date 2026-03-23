@@ -15,10 +15,15 @@ builder.Services.AddDbContext<QuickStart.WebApiLayer.Contexts.QuickStartContext>
 
 var app = builder.Build();
 
+app.UseStaticFiles();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.InjectStylesheet("/swagger-ui/custom-swagger.css");
+    });
 }
 
 app.UseHttpsRedirection();
