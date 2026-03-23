@@ -74,12 +74,12 @@ QuickStart1/
 
 
 ## 📸 Ekran Görüntüleri
-![Anasayfa](ScreenShots/Home.png)
+![Anasayfa](ScreenShots/Home1.png)
 ![Anasayfa](ScreenShots/Home2.png)
 
 ![Swagger](ScreenShots/Swagger.png)
 
-![Admin](ScreenShots/Admin.png)
+![Admin](ScreenShots/Admin1.png)
 
 ![Admin](ScreenShots/Admin2.png)
 
