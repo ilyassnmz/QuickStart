@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart1\\quickstartproject.webuilayer\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|solutionrelative:quickstartproject.webuilayer\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\quickstart1\\quickstartproject.webuilayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3632A8EA-514B-5C3F-F793-3A8F0DC3F61A}|QuickStartProject.WebUILayer\\QuickStartProject.WebUILayer.csproj|solutionrelative:quickstartproject.webuilayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -14,20 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "QuickStartProject.WebUILayer\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-22T19:55:37.553Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\QuickStart1\\QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "QuickStartProject.WebUILayer\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T17:58:44.605Z",
               "EditorCaption": ""
             },
             {

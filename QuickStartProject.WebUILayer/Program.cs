@@ -12,13 +12,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 builder.Services.AddAuthorization();
 
-builder.Services.AddControllersWithViews(opt =>
-{
-    var policy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser()
-        .Build();
-    opt.Filters.Add(new AuthorizeFilter(policy));
-});
+builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 var app = builder.Build();
 
