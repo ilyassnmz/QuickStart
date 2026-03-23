@@ -166,3 +166,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer\obj\Debug\net9.0\ref\QuickStart.WebApiLayer.dll
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer\bin\Debug\net9.0\QuickStart.WebApiLayer.staticwebassets.runtime.json
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer\obj\Debug\net9.0\compressed\301nq86ph0-qoh67ikeg1.gz
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\QuickStart1\QuickStart.WebApiLayer\bin\Debug\net9.0\Scalar.AspNetCore.dll

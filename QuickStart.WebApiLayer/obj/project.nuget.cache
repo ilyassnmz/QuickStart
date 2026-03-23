@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RyulqywoXcU=",
+  "dgSpecHash": "nDHYmgt1Kxg=",
   "success": true,
   "projectFilePath": "C:\\Users\\lunap\\OneDrive\\Masaüstü\\MyProjects\\QuickStart1\\QuickStart.WebApiLayer\\QuickStart.WebApiLayer.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\lunap\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\lunap\\.nuget\\packages\\scalar.aspnetcore\\2.13.13\\scalar.aspnetcore.2.13.13.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.6\\swashbuckle.aspnetcore.9.0.6.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.6\\swashbuckle.aspnetcore.swagger.9.0.6.nupkg.sha512",
     "C:\\Users\\lunap\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.6\\swashbuckle.aspnetcore.swaggergen.9.0.6.nupkg.sha512",
